@@ -21,10 +21,10 @@
 define('DB_NAME', '70anni');
 
 /** Nome utente del database MySQL */
-define('DB_USER', 'root');
+define('DB_USER', '');
 
 /** Password del database MySQL */
-define('DB_PASSWORD', 'cip50Z321');
+define('DB_PASSWORD', '');
 
 /** Hostname MySQL  */
 define('DB_HOST', 'localhost');
