@@ -1,0 +1,681 @@
+/* 
+  
+IMPORTANT! This style sheet is for the style and layout of the Photocrati admin area
+
+*/
+
+.clear {
+	width			:	100%;
+	clear			:	both;
+	height			:	1px;
+}
+
+input[type="button"] {
+	background	: 	url(images/button-bg.jpg) repeat-x #CCCCCC;
+	border		:	2px solid #A2A2A2;
+	color		:	#333333;
+	padding		:	3px;
+}
+
+input.wrong-value {
+background-color:#dd9966;
+}
+
+#admin-wrapper {
+	padding		:	10px 0;
+}
+
+#admin-wrapper #header-left {
+	width		:	375px;
+	height		:	45px;
+	float		:	left;
+}
+
+#admin-wrapper #header-right {
+	width		:	390px;
+	height		:	45px;
+	float		:	left;
+	text-align	:	right;
+	color		:	#333333;
+}
+
+#admin-wrapper #header-right h1 {
+	color		:	#333333;
+	font-size	:	15px;
+	font-weight	:	bold;
+	margin		:	2px 0 3px 0;
+}
+
+#admin-wrapper #header-right p {
+	font-size	:	10px;
+	font-weight	:	bold;
+	margin-top	:	2px;
+}
+
+h1.titles {
+	font-size	:	17px;
+	font-weight	:	bold;
+	clear		:	none;
+	display		: 	inline; 
+	margin-top	:	10px;
+}
+
+
+/* Headers
+-------------------------------------------------------------- */
+
+#container {
+	width		:	750px;
+	clear		:	both;
+}
+
+.options {
+	margin		:	10px 0 0 0;
+	padding		:	7px 10px;
+	width		:	100%;
+	background	:	url(images/options-bg.jpg) repeat-x #4FA430;
+	font-size	:	13px;
+	font-weight	:	bold;
+	color		:	#FFF;
+}
+
+.sub-options {
+	padding		:	3px 10px;
+	width		:	748px;
+	background	:	#E1E1E1;
+	font-size	:	11px;
+	font-weight	:	bold;
+	color		:	#666;
+	border-left	:	1px solid #CCC;
+	border-right:	1px solid #CCC;
+}
+
+.sub-options #comments {
+	margin-left	:	0px;
+	font-size	:	11px;
+	font-weight	:	normal;
+	color		:	#666;
+}
+
+
+/* Content Boxes Content
+-------------------------------------------------------------- */
+
+.option-content {
+	padding		:	0px 9px;
+	width		:	100%;
+	display		:	inline-block;
+	background	:	#F1F1F1;
+	border		:	1px solid #CCC;
+	font-size	:	12px;
+	color		:	#333333;
+}
+
+.option-content .right-lg {
+	width		:	65%;
+	float		:	left;
+}
+
+.option-content .left {
+	width		:	45%;
+	float		:	left;
+	margin-right:	2%;
+}
+
+.option-content .left-sm {
+	width		:	30%;
+	float		:	left;
+}
+
+.option-content .right {
+	width		:	50%;
+	float		:	left;
+}
+
+.left em, .right em {
+	color		:	#666666;
+	font-style	:	italic
+}
+
+.option-content .left .inner, .option-content .right .inner {
+	width		:	49%;
+	float		:	left;
+}
+
+.option-content p {
+	margin:0.8em 0;
+	padding:0 0.5em;
+}
+.option-content .font-window {
+	/* can't apply padding above to .font-window as it has width:100% set */
+	margin:0.8em 0.5em;
+}
+
+.option-content .titles {
+	font-weight	:	bold;
+	margin-bottom:-0.5em;
+	padding:0.5em;
+}
+
+.option-content .submit-button-wrapper {
+	width		:	auto;
+	float		:	left;
+	clear		:	both;
+	margin		:	5px 10px 0 0;
+}
+
+.option-content input[type="button"] {
+	cursor		:	pointer;
+	margin		:	0 0 10px 0;
+}
+
+p.warning {
+	color		:	#FF0000;
+	font-size	:	10px;
+}
+
+#option-container {
+	width		:	100%;
+	float		:	left;
+}
+
+#option-container a {
+	cursor		:	pointer;
+}
+
+#color-choices {
+	border-right:	0px;
+	width		:	100%;
+	max-height	:	420px;
+	overflow	:	scroll;
+}
+
+#color-choices .option {
+	float		:	left;
+	width		:	32%;
+}
+
+#color-choices .option img {
+	border		:	1px solid #CCCCCC;
+}
+
+#color-choices .option input {
+	margin-top	:	5px;
+}
+
+p.notes {
+	font-size	:	11px;
+}
+
+.delete {
+	margin-top	:	2px;
+}
+
+.msg, .request-msg, #msg, #msg2, #msg3, #msg4, #msg5, #msg6, #msg7, #msg8, #msg9, #msg10, #msg11 {
+	width		:	auto;
+	float		:	left;
+	margin-top	:	6px;
+	background	:	#C8EBA9;
+	border		:	1px solid #37993a;
+	font-size	:	10px;
+	color		:	#37993a;
+	padding		:	1px 3px;
+	display		:	none;
+}
+
+.msg-error {
+	background	:	#EBC8A9;
+	border		:	1px solid #99373a;
+	color		:	#99373a;
+}
+
+.validation-container {
+	display: none;
+	margin:10px 0;
+	padding:5px 10px;
+	font-size:12px;
+}
+
+.validation-error {
+	background	:	#e6c4c0;
+	border		:	1px solid #c6a4a0;
+}
+
+.validation-error-field {
+	background: url('images/error.png') left 50% scroll no-repeat;
+	padding-left:18px !important;
+}
+
+
+#msggallery, .msggallery, #msggallery1, .msggallery1, #msggallery2, .msggallery2, #msggallery3, .msggallery3, #msggallery4, .msggallery4 {
+	width		:	auto;
+	float		:	left;
+	margin-top	:	2px;
+	margin-left	:	10px;
+	background	: 	url(../photocrati-gallery/admin/ajax-loader-save.gif) left no-repeat #aaebac;
+	border		:	0px solid #37993a;
+	font-size	:	9px;
+	color		:	#37993a;
+	padding		:	3px 3px 3px 22px;
+	display		:	none;
+}
+
+#tabs_wrapper {
+	width		:	782px;
+	clear		:	both;
+	margin-top	:	10px;
+}
+
+ul.tabs {
+	margin          :   0;
+	padding         :   0;
+	float           :   right;
+	list-style      :   none;
+	height          :   28px;
+	border-bottom   :   1px solid #CCC;
+	border-right    :   1px solid #CCC;
+	width           :   100%;
+}
+
+ul.tabs li {
+	float           :   right;
+	margin          :   0;
+	padding         :   0;
+	height          :   27px;
+	line-height     :   27px;
+	border          :   1px solid #CCC;
+	border-right    :   none;
+	margin-bottom   :   -1px;
+	background      :   #D3ECC3;
+	overflow        :   hidden;
+	position        :   relative;
+}
+
+ul.tabs li a {
+	text-decoration :   none;
+	color           :   #666;
+	font-weight		:	bold;
+	display         :   block;
+	font-size       :   13px;
+	padding         :   0 20px;
+	border          :   1px solid #fff;
+	outline         :   none;
+}
+
+ul.tabs li a:hover {
+	background      :   #C6E9A8;
+	color           :   #333;
+}
+
+html ul.tabs li.active, html ul.tabs li.active a, html ul.tabs li.active a:hover {
+	background      :   #fff;
+	border-bottom   :   1px solid #fff;
+	color           :   #333;
+	font-weight		:	bold;
+}
+
+.tab_container {
+	border          :   1px solid #CCC;
+	border-top      :   none;
+	clear           :   both;
+	float           :   left; 
+	width           :   780px;
+	background      :   #fff;
+	-moz-border-radius-bottomright      :   5px;
+	-khtml-border-radius-bottomright    :   5px;
+	-webkit-border-bottom-right-radius  :   5px;
+	-moz-border-radius-bottomleft       :   5px;
+	-khtml-border-radius-bottomleft     :   5px;
+	-webkit-border-bottom-left-radius   :   5px;
+}
+
+.ie7 .tab_container {
+	margin-top		:	29px;
+}
+
+.tab_content {
+	padding         :   5px;
+	font-size       :   1.2em;
+    display         :   none;
+}
+
+.font-window {
+	height			:	175px;
+	overflow		:	auto;
+	padding			:	0 5px 2px 5px;
+	margin			:	5px 0;
+	border			:	1px solid #CCCCCC;
+	background		:	#FFFFFF;
+}
+
+.font-window .font-float {
+	float			:	left;
+	width			:	50%;
+	height			:	35px;
+	margin-bottom	:	6px;
+	vertical-align	:	middle;
+}
+
+
+/* Theme Style Options
+-------------------------------------------------------------- */
+
+#fileUpload {
+	display:none;
+	width:620px;
+}
+
+#filesUploaded {
+	display		:	none;
+}
+
+#fileName {
+	padding		: 	5px 0;
+	width		:	100%;
+	clear		:	both;
+	display		:	block;
+}
+
+
+/* Photocrati Gallery
+-------------------------------------------------------------- */
+
+#gallery-wrapper {
+	padding		:	10px;
+	font-family :   Arial, Helvetica, sans-serif;
+	font-size	:	12px;
+}
+
+#gallery-wrapper h2 {
+	font-size	:	13px;
+	font-weight	:	bold;
+}
+
+#gallery_types {
+	width		:	100%;	
+	margin		:	15px 0 0 0;
+	height		:	125px;
+}
+
+#gallery_types .types_inner {
+	width		:	120px;
+	float		:	left;	
+	font-weight	:	bold;
+}
+
+.gallery_uploaded, #gallery_uploaded {
+	width				:	142px;
+	height				:	141px;
+	margin				:	2px;
+	float				:	left;
+	background			:	url(../photocrati-gallery/admin/ajax-loader.gif) center 10% no-repeat #F1F1F1;
+	border				:	1px solid #CCC;
+	text-align			:	center;
+}
+
+.gallery_uploaded img, #gallery_uploaded img {
+	max-width			:	130px!important;
+	max-height			:	100px!important;
+	margin				:	6px;
+}
+
+.gallery_uploaded .image, #gallery_uploaded .image {
+	width				:	100%;
+	height				:	109px;
+}
+
+.gallery_uploaded .controls, #gallery_uploaded .controls {
+	clear				:	both;
+	width				:	126px;
+	height				:	21px;
+	background			:	#E1E1E1;
+	padding				:	1px 8px 7px 8px;
+	text-align			:	right;
+	margin-top			:	2px;
+	border-top			:	1px solid #CCC;
+}
+
+.gallery_uploaded .controls img, #gallery_uploaded .controls img {
+	border				:	0;
+	margin-left			:	5px;
+}
+
+.gallery_meta {
+	width				:	435px;
+	height				:	137px;
+	padding				:	2px 7px;
+	margin				:	2px;
+	float				:	left;
+	background			:	#F5F5F5;
+	border				:	1px solid #CCC;
+	text-align			:	left;
+}
+
+.gallery_meta p {
+	color				:	#333;
+	margin-top			:	5px;
+}
+
+.gallery_meta input, .gallery_meta textarea {
+	border				:	1px solid #CCC;
+	padding				:	2px;
+}
+
+.gallery_meta input.image-input-field, .gallery_meta textarea.image-input-field {
+	width:95%;
+}
+
+.gallery_meta .image-file-name {
+font-size:13px;
+line-height:22px;
+font-weight:normal;
+}
+
+.gallery_meta .ecomm_op {
+	width				:	50%;
+	float				:	left;
+	color				:	#666;
+	margin-bottom		:	2px;
+}
+
+#sortable, #sortable_album {
+	list-style			:	none;
+	margin				:	-10px 0 0 -40px;
+	width				:	100%;
+}
+
+.ie7 #sortable, .ie7 #sortable_album, .ie8 #sortable_album {
+	margin				:	-10px 0 0 0px;
+}
+
+#sortable li, #sortable_album li {
+	list-style			:	none;
+	float				:	left;
+	border				:	0;
+	margin				:	0;
+}
+
+#widget_drag {
+	
+}
+
+.ie8 #widget_drag {
+}
+
+.order_box {
+	width: 25px;
+	border: 1px solid #999;
+}
+
+.order_label {
+	font-size: 11px;
+	color: #333;
+}
+
+.loading {
+	background	:	url(../photocrati-gallery/admin/ajax-loader.gif) center;
+}
+
+/*
+#gallery_types .types_inner img {
+	opacity		:	0.3;
+	filter		:	alpha(opacity=30);
+}
+*/
+
+#gallery_title {
+	width				:	100%;
+	margin				:	5px 0;
+}
+
+#gallery_title input[type="text"], #gallery_title textarea {
+	border				:	2px solid #CCC;
+	padding				:	3px;
+}
+
+#gallery_types .types_inner input[type="radio"] {
+	vertical-align	:	middle;
+}
+
+#gallery-wrapper input[type="button"] {
+	margin			:	10px 0;
+}
+
+#import_nexgen_window, #import_photocrati_window {
+	border			: 	1px solid #E1E1E1;
+	width			:	95%;
+	height			:	auto;
+	padding			:	0 0 10px 0;
+	margin-bottom	:	10px;
+}
+
+#import_nexgen_window h3, #import_photocrati_window h3 {
+	font-size		:	13px;
+	font-weight		:	bold;
+	margin			:	0 0 5px 0;
+	padding			:	5px;
+	background		:	#F1F1F1;
+	border-bottom	:	1px solid #E1E1E1;
+}
+
+#import_nexgen_window p, #import_photocrati_window p {
+	font-size		:	13px;
+	font-weight		:	bold;
+	margin-bottom	:	5px;
+	margin-left		:	10px;
+}
+
+#import_nexgen_window p.tips, #import_photocrati_window p.tips {
+	width			:	90%;
+	font-size		:	12px;
+	font-weight		:	normal;
+	font-style		:	italic;
+}
+
+.nggallery_images {
+	margin:			:	5px 10px;
+	display			:	table;
+	height			:	auto;
+}
+
+.nggallery_filenames_wrapper {
+	width			:	100%;
+	display			:	block;
+	height			:	auto;
+}
+
+.nggallery_filenames {
+	width			:	100%;
+	display			:	block;
+}
+
+.nggallery_filenames li {
+	width			:	25%;
+	height			:	60px;
+	float			:	left;
+	margin			:	2px 0;
+	display			:	inline;
+	margin-left		:	0px;
+	list-style-position	:	inside;
+}
+
+.nggallery_buttons {
+	width			:	100%;
+	height			:	30px;
+	margin-left		:	10px;
+	margin-top		:	15px;
+	display			:	block;
+	clear			:	both;
+}
+
+.sortable_album {
+	width			:	32%;
+	height			:	175px;
+	float			:	left;
+	margin-right	:	1%;
+	margin-bottom	:	25px;
+}
+
+#album_wrapper {
+	width			:	32%;
+	height			:	135px;
+	float			:	left;
+	margin-right	:	1%;
+	margin-bottom	:	25px;
+}
+
+.ie7 #sortable_album, .ie8 #sortable_album {
+	margin				:	0 0px 0 0px;
+}
+
+#album_wrapper .image {
+	width			:	179px;
+	height			:	130px;
+	clear			:	both;
+	text-align		:	center;
+}
+
+#album_wrapper .image img {
+	max-width		:	175px;
+	max-height		:	120px;
+	border			:	2px solid #999;
+}
+
+.ie7 #album_wrapper .image img, .ie8 #album_wrapper .image img {
+	width			:	175px;
+	height			:	120px;
+}
+
+#album_wrapper .image .checkbox {
+	position		:	relative;
+	width			:	inherit;
+	background		:	#000;
+	opacity			:	0.75;
+	filter			:	alpha(opacity=75);
+	top				:	-19px;
+	text-align		:	left;
+}
+
+#album_wrapper .image .checkbox input {
+	margin-left		:	5px;
+}
+
+#album_wrapper .image .checkbox .order {
+	float			:	right;
+	margin			:	1px 5px 0 0;
+	text-align		:	right;
+	font-size		:	11px;
+	color			:	#FFF;
+	height			:	10px;
+}
+
+#album_wrapper .image .checkbox .order input {
+	width			:	15px;
+	border			:	0;
+	font-size		:	11px;
+}
+
+#album_wrapper .title {
+	width			:	180px;
+	clear			:	both;
+}

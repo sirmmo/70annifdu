@@ -1,0 +1,122 @@
+.photocrati-menu,
+.photocrati-menu ul,
+.photocrati-menu li,
+.photocrati-menu span,
+.photocrati-menu a {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border: 0;
+  line-height: 1;
+  box-sizing: content-box;
+}
+.photocrati-menu {
+}
+.photocrati-menu:after,
+.photocrati-menu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.photocrati-menu a {
+  color: #000;
+  display: block;
+  padding: 0 17px;
+  text-decoration: none;
+}
+.photocrati-menu ul {
+  list-style: none;
+  width: auto;
+}
+.photocrati-menu > ul {
+  width: auto;
+	margin: 0 auto;
+}
+.photocrati-menu > ul > li {
+  vertical-align: top;
+  display: inline-block;
+}
+.photocrati-menu > ul > li > a {
+}
+.photocrati-menu ul li .photocrati-menu-expander {
+	display: none;
+	font-family: Helvetica,Arial,"Lucida Grande",sans-serif;
+	font-weight: normal;
+	width: 1em;
+	height: 1em;
+	line-height: 1;
+	vertical-align: middle;
+	/*border: 1px solid #ccc;*/
+	border-radius: 0.3em;
+	position: absolute;
+	right: 0;
+}
+.photocrati-menu ul li.menu-item-has-children.item-open .photocrati-menu-expander {
+}
+.photocrati-menu .menu-item-has-children {
+}
+.photocrati-menu-responsive ul li .photocrati-menu-item-text {
+	margin-left: 1.2em;
+	margin-right: 1.2em;
+}
+.photocrati-menu-responsive ul li.menu-item-has-children .photocrati-menu-expander {
+	display: inline-block;
+}
+.photocrati-menu .menu-item-has-children:hover > ul {
+  display: block;
+}
+.photocrati-menu-responsive .menu-item-has-children:hover > ul {
+  display: none;
+}
+.photocrati-menu-responsive .menu-item-has-children.item-open > ul {
+  display: block;
+}
+.photocrati-menu .menu-item-has-children ul {
+  text-align: left;
+  display: none;
+  position: absolute;
+  z-index: 99997;
+  top: 100%;
+  left: 0;
+  min-width: 15em;
+}
+.photocrati-menu .menu-item-has-children:last-child ul {
+  right: 0;
+  left: auto;
+}
+.photocrati-menu .menu-item-has-children ul li {
+  *margin-bottom: -1px;
+}
+.photocrati-menu .menu-item-has-children ul li a {
+  filter: none;
+  display: block;
+  line-height: 120%;
+  padding: 8px 17px;
+}
+.photocrati-menu .menu-item-has-children ul li:hover a {
+}
+.photocrati-menu .menu-item-has-children .menu-item-has-children:hover > ul {
+  display: block;
+}
+.photocrati-menu-responsive .menu-item-has-children .menu-item-has-children:hover > ul {
+  display: none;
+}
+.photocrati-menu-responsive .menu-item-has-children .menu-item-has-children.item-open > ul {
+  display: block;
+}
+.photocrati-menu .menu-item-has-children .menu-item-has-children ul {
+  display: none;
+  position: absolute;
+  z-index: 99998;
+  left: 100%;
+  top: 0;
+}
+.photocrati-menu .menu-item-has-children:last-child .menu-item-has-children ul {
+  right: 100%;
+  left: auto;
+}
+.photocrati-menu .menu-item-has-children .menu-item-has-children ul li a {
+}
+.photocrati-menu .menu-item-has-children .menu-item-has-children ul li a:hover {
+}
+

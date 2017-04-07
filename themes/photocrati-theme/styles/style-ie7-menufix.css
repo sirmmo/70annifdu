@@ -1,0 +1,12 @@
+/*   
+This file sets fixes for IE browsers
+.
+*/
+
+#menu_wrapper { /* This is the main menu container */
+	width			:	950px;
+	float 			: 	right;
+	text-align 		: 	right;
+    position		:	relative;
+	top				:	-75px;
+}

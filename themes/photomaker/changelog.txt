@@ -1,0 +1,24 @@
+== Changelog ==
+
+= Theme Name: photomaker =
+
+= Version: 1.0.3=
+* Gallery style issue, Fixed.
+
+= Version: 1.0.2=
+* Site title and site description are small issue Fixed.
+* If you hover over the image hover is on a bigger area than the image issue Fixed.
+* Blog listing no margin in left side on small screen. eg. laptop issue Fixed.
+
+= Version: 1.0.1=
+* Deprecated add_custom_image_header function issue Fixed.
+* Undefined index: extension issue Fixed.
+* Undefined index: dirname issue Fixed.
+* Not found license of some js files issue Fixed. All js licensed included.
+* WordPress standard format issue Fixed. 
+* Code optimized.
+
+
+= Version: 1.0 =
+* photomaker Theme is created on 01/05/2014.
+

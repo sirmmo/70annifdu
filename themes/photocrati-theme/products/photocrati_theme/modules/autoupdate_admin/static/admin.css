@@ -1,0 +1,38 @@
+#update-content {
+margin-top:10px;
+}
+#update-loader {
+background:transparent none no-repeat scroll left center;
+background-image:url('ajax-loader.gif');
+padding:20px 40px;
+}
+#update-content .details {
+font-size:105%;
+font-style:italic;
+margin:8px 0px;
+}
+#update-content .details .message {
+font-style:italic;
+font-size:115%;
+padding:8px 5;
+}
+#update-content .details-alert .message {
+font-size:100%;
+color:#553322;
+line-height:30px;
+}
+#update-content .details .log {
+background:#f8f8f8;
+overflow-y:scroll;
+padding:5px 8px;
+margin:0 0 8px 0;
+}
+#update-content .details .show-log {
+margin:0;
+}
+#update-content .details .show-log-button {
+margin-right:20px;
+}
+button.download-log {
+margin-bottom:4px;
+}

@@ -1,0 +1,93 @@
+Photocrati Theme
+by Photocrati Media
+
+= V4.8.3 - 03.25.2015 =
+* Removed old files
+
+= V4.8.2 - 12.19.2014 =
+* Fix for Edit Gallery screen not working properly under WordPress 4.1
+* Fix for PayPal notifer script typo
+
+= V4.8.1 - 10.15.2014 =
+* Fixed image saving limit of 179 for galleries due to max input variables limit
+* Fix for plus sign appearing in legacy menus
+* Fix for background images sticking after deselection
+* Fix for PayPal IPN script throwing error
+* Fix for WP Media images not being responsive in category archives
+* Fix for list album text running past album container
+* Fix for special characters in filenames breaking slideshows and filmstrips
+* Fixed slideshows and filmstrips imageMargin parameter not working
+* Fix for borders being cut off in slideshows and filmstrips
+* Fixed issue with thumbnail galleries not adding required parameters for lightbox to open
+* Fix for thickbox border
+* Added opacity settings for menus and submenus background colors
+* Fix for Google fonts failing to load in https pages
+* Fixed issue with Edit Gallery screen giving error on some Windows hosting
+* Fix validation error
+* Fix for Mobile Safari "GO" button crashing the browser
+* Fix for blogstyle borders applying to container rather than around image
+* Fix for cart not storing new quantities for images.
+
+= V4.8 - 09.03.2014 =
+* Made Photocrati Theme layout liquid and responsive for small screens
+* Added width settings to manage layout appearance
+* Added layout spacing options for main layout distance
+* Made font sizes adaptive for high density displays such as Retina
+* Added alignment options for the sidebar
+* Added side style headers
+* Added header margin and positioning options
+* Made Menus responsive for small screens
+* Added button for responsive submenus expansion
+* Added menu padding options to adjust Menu height
+* Added options for menu alignment
+* Made images not exceed size of container
+* Added background settings such as opacity and image settings
+* Changed background images to use WordPress media images
+* Added background image slideshows for homepage
+* Added "Page Without Content" template for homepage background slideshows
+* Fixed footer widgets resizing incorrectly
+* Increased dimensions of resized gallery images to 1200px
+* Added Magnific Popup as a Lightbox and for the ecommerce popup
+* Added drop shadow settings for main container
+* Added custom CSS fields for Mobile and Desktop only
+* Added extra alignment options for post meta
+* Added new series of presets to the theme selection
+* Added new batch of background images
+* Assorted fixes for e-commerce functionality
+* Fixed cart amount not totalling over 999
+* Added ecommerce option for International shipping pricing method
+* Added ecommerce option for custom currency symbol
+* Added ecommerce galleries column width option
+* Adjusted PayPal IPN notifier to not spew errors back to PayPal
+* Added grid albums column width option
+* Updated Galleria library to the latest version
+* Removed default borders from images
+* Add support for jetpack responsive video
+* Fixed naming convention for duplicate uploads for images in galleries
+* Made many small styling adjustments to modernize looks
+* Fixed file type filters for image uploads to galleries
+* Adjusted input fields length in settings to ensure no overlapping
+* Fixed uploads breaking when WordPress is run in debug mode
+* Fixed some PHP warnings and notices
+
+= V4.7.3 - 10.02.2013 =
+* Fixed updating custom preset settings.
+* Show admin bar and add support for featured images.
+
+
+= V4.7.2 - 09.24.2013 =
+* Changed: Rename .json to .crati for presets export/import
+* Changed: Updated Pope to 0.4
+* Changed: Sharing autoupdate modules across both Photocrati Theme and NextGEN Gallery 2.0.27+
+* Fixed:   PHP warning emitted when trying to delete non-existing directories
+* Fixed:   Compatibility issue with PHP 5.4.x (incorrect use of references)
+* Fixed:   Loading indicator not showing for slideshows and filmstrips
+* Fixed:   Minor style issues on home page
+* Fixed:   Ability to upload images larger than 2MB
+* Fixed:   "Settings failed" message appearing after successfully saving theme options
+* Fixed:   Adjust IPN notifier to use http 1.1 as well as make it more secure.
+* Fixed:   Paths generated for photocrati-gallery not working correctly for symlinks
+* Fixed:   Ensure that generating the static stylesheet from the dynamic stylesheet is reliable
+* Fixed:   Various issues when the theme was used as a parent of a child theme
+* Fixed:   Problem with variable collisions, causing Photocrati_Cart object being stored in session
+* Fixed:   Italics and uppercase options for logo title

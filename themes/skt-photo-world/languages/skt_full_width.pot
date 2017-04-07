@@ -1,0 +1,573 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SKT Full Width\n"
+"POT-Creation-Date: 2014-03-24 15:28+0530\n"
+"PO-Revision-Date: 2014-03-24 15:32+0530\n"
+"Last-Translator: \n"
+"Language-Team: SKT Themes <support@sktthemes.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: E:\\xampp\\htdocs\\themes_for_skt\\skt_full_width\\wp-"
+"content\\themes\\skt_full_width\n"
+
+#: ../404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../404.php:20
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: ../404.php:28
+msgid "Most Used Categories"
+msgstr ""
+
+#: ../404.php:45
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: ../archive.php:32
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: ../archive.php:40
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: ../archive.php:43
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: ../archive.php:46
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: ../archive.php:49
+msgid "Asides"
+msgstr ""
+
+#: ../archive.php:52
+msgid "Images"
+msgstr ""
+
+#: ../archive.php:55
+msgid "Videos"
+msgstr ""
+
+#: ../archive.php:58
+msgid "Quotes"
+msgstr ""
+
+#: ../archive.php:61
+msgid "Links"
+msgstr ""
+
+#: ../archive.php:64
+#: ../sidebar.php:12
+msgid "Archives"
+msgstr ""
+
+#: ../comments.php:36
+#: ../comments.php:56
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:37
+#: ../comments.php:57
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:38
+#: ../comments.php:58
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#: ../content-page.php:18
+#: ../content-single.php:22
+#: ../content.php:31
+#: ../image.php:58
+msgid "Pages:"
+msgstr ""
+
+#: ../content-page.php:23
+#: ../content-single.php:61
+#: ../content.php:65
+#: ../image.php:32
+#: ../image.php:64
+#: ../inc/template-tags.php:71
+#: ../inc/template-tags.php:90
+msgid "Edit"
+msgstr ""
+
+#: ../content.php:28
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../content.php:42
+#: ../content.php:52
+msgid ", "
+msgstr ""
+
+#: ../content.php:46
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: ../content.php:56
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: ../content.php:62
+msgid "Leave a comment"
+msgstr ""
+
+#: ../content.php:62
+msgid "1 Comment"
+msgstr ""
+
+#: ../content.php:62
+msgid "% Comments"
+msgstr ""
+
+#: ../functions.php:35
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:51
+msgid "Blog Sidebar"
+msgstr ""
+
+#: ../functions.php:52
+msgid "Appears on blog page sidebar"
+msgstr ""
+
+#: ../header.php:118
+msgid "Menu"
+msgstr ""
+
+#: ../header.php:119
+msgid "Skip to content"
+msgstr ""
+
+#: ../image.php:22
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\">%4$s &times; %5$s</a> in <a "
+"href=\"%6$s\" rel=\"gallery\">%7$s</a>"
+msgstr ""
+
+#: ../image.php:37
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: ../image.php:38
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../no-results.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: ../no-results.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../no-results.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../no-results.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../options.php:37
+msgid "Basic Settings"
+msgstr ""
+
+#: ../options.php:41
+msgid "Logo"
+msgstr ""
+
+#: ../options.php:42
+msgid "Upload your logo here"
+msgstr ""
+
+#: ../options.php:50
+msgid "Copyright Text"
+msgstr ""
+
+#: ../options.php:51
+msgid ""
+"Some Text regarding copyright of your site, you would like to display in the "
+"footer."
+msgstr ""
+
+#: ../options.php:59
+msgid "Layout Settings"
+msgstr ""
+
+#: ../options.php:74
+msgid "Custom CSS"
+msgstr ""
+
+#: ../options.php:75
+msgid ""
+"Some Custom Styling for your site. Place any css codes here instead of the "
+"style.css file."
+msgstr ""
+
+#: ../options.php:83
+msgid "Slider Settings"
+msgstr ""
+
+#: ../options.php:94
+msgid "Slider Image 1"
+msgstr ""
+
+#: ../options.php:95
+msgid "First Slide"
+msgstr ""
+
+#: ../options.php:101
+#: ../options.php:126
+#: ../options.php:151
+#: ../options.php:176
+#: ../options.php:201
+msgid "Title"
+msgstr ""
+
+#: ../options.php:107
+#: ../options.php:132
+#: ../options.php:157
+#: ../options.php:182
+#: ../options.php:207
+msgid "Description or Tagline"
+msgstr ""
+
+#: ../options.php:113
+#: ../options.php:138
+#: ../options.php:163
+#: ../options.php:188
+#: ../options.php:213
+msgid "Url"
+msgstr ""
+
+#: ../options.php:119
+msgid "Slider Image 2"
+msgstr ""
+
+#: ../options.php:120
+msgid "Second Slide"
+msgstr ""
+
+#: ../options.php:144
+msgid "Slider Image 3"
+msgstr ""
+
+#: ../options.php:145
+msgid "Third Slide"
+msgstr ""
+
+#: ../options.php:169
+msgid "Slider Image 4"
+msgstr ""
+
+#: ../options.php:170
+msgid "Fourth Slide"
+msgstr ""
+
+#: ../options.php:194
+msgid "Slider Image 5"
+msgstr ""
+
+#: ../options.php:195
+msgid "Fifth Slide"
+msgstr ""
+
+#: ../options.php:221
+msgid "Social Settings"
+msgstr ""
+
+#: ../options.php:225
+msgid ""
+"Please set the value of following fields, as per the instructions given "
+"along. If you do not want to use an icon, just leave it blank. If some icons "
+"are showing up, even when no value is set then make sure they are completely "
+"blank, and just save the options once. They will not be shown anymore."
+msgstr ""
+
+#: ../options.php:229
+msgid "Facebook"
+msgstr ""
+
+#: ../options.php:230
+msgid "Facebook Profile or Page URL i.e. http://facebook.com/username/ "
+msgstr ""
+
+#: ../options.php:237
+msgid "Twitter"
+msgstr ""
+
+#: ../options.php:238
+msgid "Twitter Username"
+msgstr ""
+
+#: ../options.php:245
+msgid "Google Plus"
+msgstr ""
+
+#: ../options.php:246
+msgid "Google Plus profile url, including \"http://\""
+msgstr ""
+
+#: ../options.php:253
+msgid "Linkedin"
+msgstr ""
+
+#: ../options.php:254
+msgid "Linkedin URL"
+msgstr ""
+
+#: ../options.php:263
+msgid "Contact Details"
+msgstr ""
+
+#: ../options.php:267
+msgid "Company Name"
+msgstr ""
+
+#: ../options.php:273
+msgid "Address 1"
+msgstr ""
+
+#: ../options.php:279
+msgid "Address 2"
+msgstr ""
+
+#: ../options.php:285
+msgid "Phone"
+msgstr ""
+
+#: ../options.php:291
+msgid "Email"
+msgstr ""
+
+#: ../options.php:297
+msgid "Disable contact form"
+msgstr ""
+
+#: ../options.php:298
+msgid "Check this to disable contact form."
+msgstr ""
+
+#: ../options.php:305
+msgid "Our Themes"
+msgstr ""
+
+#: ../options.php:309
+msgid ""
+"SKT Full Width WordPress theme has been Designed and Created by SKT Themes."
+msgstr ""
+
+#: ../options.php:313
+msgid "<a href=\""
+msgstr ""
+
+#: ../search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../sidebar.php:18
+msgid "Meta"
+msgstr ""
+
+#: ../inc/extras.php:66
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../inc/options-framework.php:147
+msgid "Full Width Theme Options"
+msgstr ""
+
+#: ../inc/options-framework.php:148
+msgid "Theme Options"
+msgstr ""
+
+#: ../inc/options-framework.php:193
+msgid "Clear"
+msgstr ""
+
+#: ../inc/options-framework.php:194
+msgid "Default"
+msgstr ""
+
+#: ../inc/options-framework.php:195
+msgid "Select Color"
+msgstr ""
+
+#: ../inc/options-framework.php:240
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: ../inc/options-framework.php:272
+msgid "Default options restored."
+msgstr ""
+
+#: ../inc/options-framework.php:326
+msgid "Options saved."
+msgstr ""
+
+#: ../inc/options-framework.php:376
+msgid "SKT Full Width Settings"
+msgstr ""
+
+#: ../inc/options-media-uploader.php:51
+msgid "No file chosen"
+msgstr ""
+
+#: ../inc/options-media-uploader.php:54
+#: ../inc/options-media-uploader.php:113
+msgid "Upload"
+msgstr ""
+
+#: ../inc/options-media-uploader.php:56
+#: ../inc/options-media-uploader.php:114
+msgid "Remove"
+msgstr ""
+
+#: ../inc/options-media-uploader.php:59
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: ../inc/options-media-uploader.php:83
+msgid "View File"
+msgstr ""
+
+#: ../inc/options-sanitize.php:237
+msgid "No Repeat"
+msgstr ""
+
+#: ../inc/options-sanitize.php:238
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: ../inc/options-sanitize.php:239
+msgid "Repeat Vertically"
+msgstr ""
+
+#: ../inc/options-sanitize.php:240
+msgid "Repeat All"
+msgstr ""
+
+#: ../inc/options-sanitize.php:253
+msgid "Top Left"
+msgstr ""
+
+#: ../inc/options-sanitize.php:254
+msgid "Top Center"
+msgstr ""
+
+#: ../inc/options-sanitize.php:255
+msgid "Top Right"
+msgstr ""
+
+#: ../inc/options-sanitize.php:256
+msgid "Middle Left"
+msgstr ""
+
+#: ../inc/options-sanitize.php:257
+msgid "Middle Center"
+msgstr ""
+
+#: ../inc/options-sanitize.php:258
+msgid "Middle Right"
+msgstr ""
+
+#: ../inc/options-sanitize.php:259
+msgid "Bottom Left"
+msgstr ""
+
+#: ../inc/options-sanitize.php:260
+msgid "Bottom Center"
+msgstr ""
+
+#: ../inc/options-sanitize.php:261
+msgid "Bottom Right"
+msgstr ""
+
+#: ../inc/options-sanitize.php:274
+msgid "Scroll Normally"
+msgstr ""
+
+#: ../inc/options-sanitize.php:275
+msgid "Fixed in Place"
+msgstr ""
+
+#: ../inc/options-sanitize.php:349
+msgid "Normal"
+msgstr ""
+
+#: ../inc/options-sanitize.php:350
+msgid "Italic"
+msgstr ""
+
+#: ../inc/options-sanitize.php:351
+msgid "Bold"
+msgstr ""
+
+#: ../inc/options-sanitize.php:352
+msgid "Bold Italic"
+msgstr ""
+
+#: ../inc/template-tags.php:34
+msgid "Post navigation"
+msgstr ""
+
+#: ../inc/template-tags.php:44
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: ../inc/template-tags.php:48
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:71
+msgid "Pingback:"
+msgstr ""
+
+#: ../inc/template-tags.php:94
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/template-tags.php:185
+#, php-format
+msgid ""
+"<span class=\"posted-on\">Published %1$s</span><span class=\"byline\"> by "
+"%2$s</span>"
+msgstr ""

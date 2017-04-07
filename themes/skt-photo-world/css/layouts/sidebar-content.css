@@ -1,0 +1,19 @@
+/*
+
+Theme Name: SKT Photo World
+
+Layout: Sidebar-Content
+
+*/
+
+
+
+#secondary {
+	width: 26%;
+	float: left;
+}
+
+#primary {
+	width: 70%;
+	float: right;
+}

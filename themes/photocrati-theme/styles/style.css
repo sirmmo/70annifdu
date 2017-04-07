@@ -1,0 +1,2025 @@
+
+    /* Reset default browser styles */
+    @import url('resets/reset.css');
+
+    /* Rebuild default browser styles */
+    @import url('resets/rebuild.css');
+
+    /* Basic WordPress Styles */
+    @import url('resets/wp.css');
+    
+    /* Basic Menu Styles */
+    @import url('menu/default.css');
+    
+
+    /* General Styles
+    -------------------------------------------------------------- */
+
+    /* The following section sets the basic body, H1-H5 and link styles */
+
+    html {
+    min-height		:	100%;
+    }
+
+    body {
+    background		: #333333 url(http://70annifestaunita.it/wp-content/uploads/2015/06/img066.jpg) no-repeat fixed 0 0px;
+    		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+        padding-top 	: 	0;
+    margin-top 		: 	0;
+    min-height			:	100%;
+    }
+    
+    pre {
+    	max-width: 100%;
+    	overflow: auto;
+    }
+
+    h1 { /* The H1 tag is used for page titles, and post titles on blog page. */
+    font-size 		: 	32px;
+    font-family		:	'Oswald', serif;
+    color			: 	#000000;
+    text-decoration :   none;
+    clear			:	none;
+    text-transform	:	uppercase;
+    }
+
+    h1 a:link, .h1 a:active, .h1 a:visited {
+    color			: 	#000000;
+    }
+
+    div.post h1.entry-title {
+    line-height: 1.20em;
+    }
+    
+    div.post h1.entry-title a {
+    color: #000000;
+    }
+
+    h2 { /* The H2 tag is used for post titles */
+    font-size 		: 	26px;
+    font-family		:	'Oswald', serif;
+    color			: 	#000000;
+    text-decoration :   none;
+    clear			:	none;
+    text-transform  :   normal;
+    margin-top      :	20px;
+    margin-bottom   :   15px;
+    }
+
+    h2 a:link, .h2 a:active, .h2 a:visited {
+    color			: 	#000000;
+    }
+
+    div.post h2.entry-title {
+    line-height: 1.20em;
+    }
+
+    div.post h2.entry-title a {
+    color: 	#000000;
+    }
+
+    h3 {
+    font-size 		: 	24px;
+    font-family     :   'Oswald', serif;
+    color			: 	#000000;
+    text-decoration :   none;
+    clear			:	none;
+    text-transform  :   normal;
+    margin-top		:	20px;
+    margin-bottom	:	15px;
+    }
+
+    h3 a:link, .h1 a:visited {
+    color			: 	#000000;
+    }
+
+    h4 {
+    font-size 		: 	22px;
+    font-family     :   'Oswald', serif;
+    color			: 	#000000;
+    text-decoration :   none;
+    clear			:	none;
+    text-transform  :   normal;
+    margin-top		:	20px;
+    margin-bottom	:	15px;
+    }
+
+    h4 a:link, .h4 a:visited {
+    color			: 	#000000;
+    }
+
+    h5 {
+    font-size 		: 	20px;
+    font-family     :   'Oswald', serif;
+    text-decoration :   none;
+    color			: 	#000000;
+    clear			:	none;
+    text-transform  :   normal;
+    margin-top		:	20px;
+    margin-bottom	:	15px;
+    }
+
+    h5 a:link, .h5 a:visited {
+    color			: 	#000000;
+    }
+
+    a:link,a:visited { /* This styles the majority of the on page links. The sidebar links can be styled seperately */
+    color 			: 	#6e6e6e;
+    text-decoration : 	none;
+    }
+
+    a:hover,a:active {
+    color 			: 	#8d8d8d;
+    text-decoration : 	none;
+    }
+
+    .clear {
+    width			:	100%;
+    clear			:	both;
+    height			:	1px;
+    }
+
+
+    /* General Page Styles
+    -------------------------------------------------------------- */
+
+    #main_container {
+    min-height:	100%;
+    z-index:	-1;
+    }
+    #main_container:before,
+		#main_container:after {
+			content: " ";
+			display: table;
+		}
+		#main_container:after {
+			clear: both;
+		}
+
+    #wrapper { /* This sets the width of the entire site */
+    position: relative;
+    margin-left: 270px;
+    overflow		:	visible;
+    }
+		#wrapper:before,
+		#wrapper:after {
+			content: " ";
+			display: table;
+		}
+		#wrapper:after {
+			clear: both;
+		}    
+    
+    #main {
+    position 		: 	relative;
+		width: 100%;
+		min-width: none;
+		max-width: 100%;
+    margin: 0;
+	  background		: rgba(255,255,255,0.85);
+    border			:	0px solid #CCCCCC;
+    }
+		#main:before,
+		#main:after {
+			content: " ";
+			display: table;
+		}
+		#main:after {
+			clear: both;
+		}    
+
+    #container { /* This sets the width of the main content area */
+    margin			: 	40px;
+    }
+
+    /* Menu Styles
+    -------------------------------------------------------------- */
+
+    #menu_wrapper { /* This is the main menu container */
+    width 			: 	auto;
+    margin			: 	0.55em 0 0 0;
+    clear			:	both;
+    text-align 		: 	center;
+    overflow 		: 	visible;
+    z-index			:	4;
+    background		:	transparent;
+    }
+
+    #menu_wrapper .photocrati-menu {
+    	margin: 0 3px; /* this seems required for some rounding errors in FF which make a scrollbar appear otherwise */
+    }
+    
+		.photocrati-menu > ul > li > a {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+    
+    /* adjustments for side header, menu needs to change... maybe place this under the -dynamic.php menu skin? */
+  #menu_wrapper {
+		text-align: right;
+  }
+  
+  #menu_wrapper .photocrati-menu {
+  	margin: 0;
+  }
+	.photocrati-menu > ul > li {
+		display: block;
+	}
+	.photocrati-menu .menu-item-has-children ul {
+		left: 100%;
+		top: 0;
+		z-index: 10000;
+	}
+	.photocrati-menu .menu-item-has-children:last-child ul {
+		left: 100%;
+		top: 0;
+	}
+	.photocrati-menu .menu-item-has-children:last-child .menu-item-has-children ul {
+		left: 100%;
+		top: 0;
+	}
+
+
+    .photocrati-menu a {
+    font-size: 16px;
+    text-transform:	uppercase;
+    }
+    
+    .photocrati-menu a:link, .photocrati-menu a:visited {
+    color: 	#888888;
+    font-family: 'Oswald', serif;
+    text-decoration: none;
+    background: transparent;
+    }
+    
+    .photocrati-menu a:link .photocrati-menu-expander, 
+    .photocrati-menu a:visited .photocrati-menu-expander {
+    border-color: 	#888888;
+    }
+    
+    .photocrati-menu a:hover,.photocrati-menu a:active,
+    .photocrati-menu .current_page_item a:link,
+    .photocrati-menu .current_page_item a:visited  {
+    color: #000000;
+    background: transparent;
+    }
+    
+    .photocrati-menu a:hover .photocrati-menu-expander,
+    .photocrati-menu a:active .photocrati-menu-expander,
+    .photocrati-menu .current_page_item a:link .photocrati-menu-expander,
+    .photocrati-menu .current_page_item a:visited .photocrati-menu-expander  {
+    border-color: #000000;
+    }
+
+    .photocrati-menu .current_page_item ul a:link,
+    .photocrati-menu .current_page_item ul a:visited {
+    color: #000000;
+    background: transparent;
+    }
+
+    .photocrati-menu .current_page_item ul a:link .photocrati-menu-expander,
+    .photocrati-menu .current_page_item ul a:visited .photocrati-menu-expander {
+    border-color: #000000;
+    }
+
+    .photocrati-menu .current_page_item ul li a:hover,
+    .photocrati-menu .current_page_item ul li a:active {
+    color: #000000;
+    background: transparent;
+    }
+
+    .photocrati-menu .current_page_item ul li a:hover .photocrati-menu-expander,
+    .photocrati-menu .current_page_item ul li a:active .photocrati-menu-expander {
+    border-color: #000000;
+    }
+
+    .photocrati-menu ul li ul li a:link,
+    .photocrati-menu ul li ul li a:visited,
+    .photocrati-menu ul li.current_page_item ul li a:link,
+    .photocrati-menu ul li.current_page_item ul li a:visited {
+    color: #888888;
+    background:	#e3dfe3;
+    font-size: 15px;
+    font-family: 'Oswald', serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    }
+
+    .photocrati-menu ul li ul li a:link .photocrati-menu-expander,
+    .photocrati-menu ul li ul li a:visited .photocrati-menu-expander,
+    .photocrati-menu ul li.current_page_item ul li a:link .photocrati-menu-expander,
+    .photocrati-menu ul li.current_page_item ul li a:visited .photocrati-menu-expander {
+    border-color: #888888;
+    }
+
+    .photocrati-menu ul li ul li a:hover,
+    .photocrati-menu ul li ul li a:active,
+    .photocrati-menu ul li.current_page_item ul li a:hover,
+    .photocrati-menu ul li.current_page_item ul li a:active,
+    .photocrati-menu ul li ul li.current_page_item a:link,
+    .photocrati-menu ul li ul li.current_page_item a:visited {
+    color: #000000;
+    background:	#e3dfe3;
+    }
+
+    .photocrati-menu ul li ul li a:hover .photocrati-menu-expander,
+    .photocrati-menu ul li ul li a:active .photocrati-menu-expander,
+    .photocrati-menu ul li.current_page_item ul li a:hover .photocrati-menu-expander,
+    .photocrati-menu ul li.current_page_item ul li a:active .photocrati-menu-expander,
+    .photocrati-menu ul li ul li.current_page_item a:link .photocrati-menu-expander,
+    .photocrati-menu ul li ul li.current_page_item a:visited .photocrati-menu-expander {
+    border-color: #000000;
+    }
+
+    .footer_menu { /* This sets the z-index of the footer menu */
+    z-index			:	2;
+    }
+
+    .footer_menu ul, .footer_menu ul * { /* This sets the width of the footer menu */
+    overflow 		: 	visible;
+    z-index			:	2;
+    list-style		: 	none;
+    margin			:	0 auto;
+    padding			:	0;
+    }
+
+    .footer_menu ul li { /* This sets the position of the footer menu items */
+    position		:	relative;
+    display			: 	inline;
+    margin			:	0 7px 0 7px;
+    font-weight		:	bold;
+    text-transform	: 	uppercase;
+    font-size		: 	14px;
+    }
+
+
+    /* Header Styles
+    -------------------------------------------------------------- */
+
+    #header { /* This sets the color of the header */
+    background		:	#ffffff;
+    height: 100%;
+    width: 250px;
+    position : fixed;
+    left: 0px;
+    /*top: 0px;*/
+    z-index: 2;
+		-moz-box-shadow: 0px 5px 10px rgb(0, 0, 0);
+		-webkit-box-shadow: 0px 5px 10px rgb(0, 0, 0);
+		box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    }
+
+    #masthead { /* This sets total width and position of the header */
+		width: auto;
+    margin: 0 auto;
+    position: relative;
+    }
+    
+		#masthead:before,
+		#masthead:after {
+			content: " ";
+			display: table;
+		}
+		#masthead:after {
+			clear: both;
+		}
+
+    #branding { /* This sets the size and position of the logo area on the header */
+    display			:	block;
+    width 			: 	100%;
+    text-align 		: 	center;
+    margin			:	70px 0 40px 0;
+        }
+    
+    #branding #blog-title {
+		word-wrap: break-word;
+    }
+
+    #branding a { /* This sets the color and style of the wordpress title */
+    display: block;
+    text-decoration: none;
+    }
+    
+    #branding img {
+    	max-width: 100%;
+    	width: auto;
+    	height: auto;
+    }
+
+    #branding h1 { /* This sets the color of the wordpress title */
+    font-size		:	36px;
+    font-family     :   'Oswald', serif;
+    color			: 	#000000;
+    line-height		:	38px;
+    border			:	0;
+    margin-top		:	15px;
+    margin-bottom	:	5px;
+    padding			:	0;
+    text-align		:	center;
+    text-transform	:	uppercase;
+    }
+
+    #branding .description { /* This sets the font size and color for the description line if you are using the Wordpress title and description */
+    font-size		:	15px;
+    font-family     :   'Oswald', serif;
+    color			: 	#6e6e6e;
+    text-transform  :   uppercase;
+    text-decoration :   none;
+/*
+*/
+    }
+
+    /* Content Styles
+    -------------------------------------------------------------- */
+
+    #content { /* This sets the width of the page content area  */
+    position		:	relative;
+    margin			: 	0;
+    width			:	100%;
+    z-index			:	1;
+    }
+
+    #content-sm { /* This sets the width of the blog content area  */
+    width			:	100%;
+    float			:	left;
+    }
+
+    #content, #content-sm { /* This sets the font size and style on the blog and pages  */
+    color 			: 	#404040;
+    font-size		: 	16px;
+    font-family     :   'Droid Serif', serif;
+    text-decoration :   none;
+    text-transform  :   normal;
+    }
+
+    #content p, #content-sm p { /* This sets the paragraph spacing and line height  */
+    line-height		: 	25px;
+    margin-bottom	: 	25px;
+    }
+
+    p {
+    margin-bottom	:	0.5em;
+    }
+
+    .post { /* This sets a small margin at the bottom of posts  */
+    margin			: 	0 0 3em 0;
+    }
+
+    #nav-above { /* This hides the navigation above blog posts*/
+    display			:	none;
+    }
+
+    #nav-above, #nav-below { /* Styles post navigation that appears above and below blog posts. */
+    font-family			: 	'Open Sans', sans-serif;
+    }
+
+    .entry-content, .entry-summary { /* This sets a small margin at the top of the post content to make space between the title/meta area  */
+    margin			: 	1.5em 0 0 0;
+    }
+
+    blockquote { /* This styles blockquotes in blog posts  */
+    border-left		:	2px solid #E1E1E1;
+    margin-left		:	25px;
+    padding-left	:	15px;
+    }
+
+
+    /* Post Styles
+    -------------------------------------------------------------- */
+
+    .navigation { /* This sets a small margin below the post navigation on a single post */
+    margin			: 	0 0 1.5em 0;
+    overflow		: 	auto;
+    }
+    
+    .size-full,
+    .entry-content img,
+    .entry-summary img { /* This sets a border around images with captions in posts */
+    max-width: 100% !important;
+    height: auto;
+    }
+    .entry-content .wp-caption,
+    .entry-summary .wp-caption {
+    max-width: 100% !important;
+    }
+
+    .entry-meta,
+    .entry-utility { /* This sets the font size and style on post meta. This is the date, post by and comment links below the post title. */
+    color 			: 	#404040;
+    font-size		: 	16px;
+    font-family     :   'Droid Serif', serif;
+    font-style 		: 	normal;
+    text-transform	:	uppercase;
+    font-size		: 	10px;
+    clear 			: 	both;
+    }
+
+    .entry-meta {
+    /* padding-left	: 	4px; not sure why this was here */
+    }
+
+    div.entry-date, .month, .day, .year { /* This aligns the post date on one line rather than stacked on top of each other. */
+    display			: 	inline;
+    }
+
+    .entry-utility { /* This styles the blog post footer meta. */
+    border-top		: 	1px solid #999;
+    }
+
+
+    /* Post Comment Styles
+    -------------------------------------------------------------- */
+
+    .comments ol { /* This removes the numbers from the comment list */
+    list-style		:	none;
+    margin-top		:	10px;
+    }
+
+    .comments li { /* This clears each comment block to a new line and adds a margin */
+    width			:	100%;
+    clear			:	both;
+    min-height		:	100px;
+    }
+
+    .comments ul.children { /* This clears each comment block to a new line and adds a margin */
+    list-style		:	none;
+    margin-top		:	30px;
+    }
+
+    .comments .comment-wrapper { /* This sets the style for the comment wrapper */
+    display			:	block;
+    }
+
+    p#comment-notes {
+    font-size		: 	13px;
+    }
+
+    div.comment-meta a.commentauthor:link, a.commentauthor:visited { /* This styles the comment author name text. */
+    color			: 	#3e3e3e;
+    margin-bottom: 3px;
+    }
+
+    .comments .comment-author { /* This sets the style for the comment author icon */
+    float			:	left;
+    width			:	13%;
+    margin-right	:	4%;
+    }
+
+    .comment-author img { /* This sets the size of comment avatars */
+    width			: 	65px;
+    height			: 	65px;
+    }
+
+    .comments .content-wrapper { /* This sets the style for the comment meta and content */
+    float			:	left;
+    width			:	83%;
+    }
+
+    .comments .comment-content { /* This sets a small margin between the meta and comment content */
+    margin-top		:	0px;
+    margin-bottom	: 	40px;
+    }
+
+    .comment-content { /* This styles the bottom of the comment text. */
+    border-bottom	: 	1px solid #e1e1e1;
+    }
+
+    div.comment-meta { /* This is the comment author, date and permalink styles. */
+    line-height		: 	1;
+    padding-bottom	: 	3px;
+    }
+
+    div.comment-meta a.commentauthor:link, a.commentauthor:visited { /* This styles the comment author name. */
+    font-size		: 	18px;
+    font-weight		: 	bold;
+    display			: 	block;
+    }
+
+    div.comment-meta .commentdate { /* This styles the comment date. */
+    font-size		: 	14px;
+    color			: 	#999;
+    }
+
+    div.comment-meta .commentpermalink { /* This styles the comment permalink. */
+    font-size		: 	12px;
+    }
+
+    .comment-meta, .comment-reply-link { /* This styles the comment meta and reply link */
+    font-family		: 	'Open Sans', sans-serif;
+    }
+
+    .comment-reply-link { /* This styles the comment reply link. */
+    float			: 	right;
+    margin-top		: 	-20px;
+    font-weight		: 	bold;
+    font-size		: 	14px;
+    }
+
+    div#cancel-comment-reply, span.loggedin, span.logout { /* This styles the 'cancel comment reply' link, logged in and logged out link. */
+    font-size		: 	13px;
+    }
+
+    div#respond { /* This styles the comment reply form. */
+    padding-bottom	: 	40px;
+    }
+
+    #respond h3 { /* This styles the comment reply h3 title. */
+    margin-bottom	: 	-5px;
+    }
+
+    span.unapproved {
+    font-style 		: 	italic;
+    }
+
+    #comments #respond input#author, #respond input#email, #respond input#url { /* This styles the comment form. */
+    background		: 	#fdfdfd;
+    color			: 	#a1a1a1;
+    height			: 	24px;
+    border			: 	2px solid #ccc;
+    }
+    
+    #comments div#form-section-comment .form-textarea {
+    	margin-right: 4px;
+    	overflow: visible;
+    }
+
+    #comments div#form-section-comment textarea { /* This styles the comment form. */
+    width			: 	100%;
+    background		: 	#fdfdfd;
+    color			: 	#252525;
+    font-size		: 	14px;
+    border			: 	2px solid #ccc;
+    }
+
+    #comments input#submit {
+    background  :  #3e3e3e;
+    border   :  0px;
+    border-radius :  5px;
+    padding   :  10px 20px;
+    margin-top  :  15px;
+    color   :  #fff;
+    font-family  :  Open Sans, 'arial black', sans-serif;
+    font-size  :  13px;
+    font-weight  :  bold;
+    }
+
+    #comments input#submit:hover {
+    background			: 	#6e6e6e;
+    cursor				:	pointer;
+    }
+
+    img.wp-smiley{  /* This sets no border around smileys */
+    border			:	none;
+    }
+
+
+    /* Sidebar Styles
+    -------------------------------------------------------------- */
+
+    #sidebar { /* This sets the size of the sidebar as well as the font size and style */
+        float: right;
+    width			: 	30%;
+    padding-top		: 	13px;
+    background		:	transparent;
+     
+    text-align		:	center;
+    color			:	#404040;
+    font-size		:	16px;
+    font-family     :   'Droid Serif', serif;
+    text-decoration :   none;
+    font-weight     :   100;
+    text-transform  :   normal;
+    }
+
+    #sidebar a { /* This sets the color of the sidebar links */
+    color			:	#6e6e6e;
+    }
+
+    #sidebar a:hover,
+    #sidebar a:active { /* This sets the color and style of the hover and active states of the sidebar links */
+    color			:	#8d8d8d;
+    text-decoration	:	none;
+    }
+
+    #sidebar .social-media { /* This sets the padding of the social media icons in the sidebar */
+    text-align		:	left;
+    padding			:	10px 10px 5px 10px;
+    }
+
+    #sidebar .social-media img { /* This sets a small margin to the right of each of the social media icons */
+    border			:	0;
+    margin-right	:	5px;
+    }
+
+    #primary, #primary_custom { /* This sets the position and width of the widget area */
+    float   :  right;
+    overflow  :  hidden;
+    width    :  100%;
+    padding-left : 0%;
+    text-align  : left;
+    }
+
+    #sidebar #primary { /* ensures there is some padding between the border of the sidebar and it's content */
+        width: 92%;
+        margin: 0px auto;
+        float: none;
+    }
+
+    .widget-title,.widgettitle { /* This sets the size and style of the sidebar titles */
+    font-size 		: 	22px;
+    font-family     :   'Oswald', serif;
+    color 			: 	#000000;
+    text-decoration :   none;
+    text-transform  :   uppercase;
+    margin-bottom 	: 	10px;
+    padding-bottom 	: 	0;
+    }
+
+    .widget-container { /* This sets a small margin below each widget */
+    margin			: 	0 0 1.5em 0;
+    }
+    .widget-container img {
+    max-width: 100%;
+    height: auto;
+    }
+
+    #searchform label { /* This hides the search form label */
+    display 		: 	none;
+    }
+
+
+    /*---------styling for custom menus in sidebar-------------*/
+
+    .widget_nav_menu ul.menu {
+    line-height		:	.5;
+    }
+
+    .widget_nav_menu ul.menu li a:link, .widget_nav_menu ul.menu li a:visited, .widget_nav_menu ul.menu li .current_page_item a:visited, .widget_nav_menu ul.menu li a:hover  {
+    background		: 	transparent;
+    padding-left	: 	0px;
+    font-family     :   'Droid Serif', serif;
+    font-size		:	16px;
+    line-height		:	1.5;
+    padding			:	0px 0px;
+    }
+
+    .widget_nav_menu ul.menu li {
+    border-bottom	: 	0px;
+    }
+
+    .widget_nav_menu ul.menu ul.sub-menu { /*-----hides sidebar custom menu submenus-----*/
+    display			:	none;
+    }
+
+    /*--------search form styles--------*/
+    #searchform {
+    position  :  relative;
+    overflow  : hidden;
+    width   :  90%;
+    height   :  24px;
+    padding-bottom :  5px;
+    padding-left :  3px;
+    background  :  #fdfdfd;
+    border   :  1px solid #ccc;
+    /*--shadow--*/
+    -moz-box-shadow: inset 0 0 3px #888;
+    -webkit-box-shadow:  inset 0 0 5px #888;
+    box-shadow:  inset 0 0 5px #888;
+    }
+
+    #searchform input#s{
+    width   :  88%;
+    height   :  24px;
+    padding-top  :  3px;
+    padding-bottom :  4px;
+    background  :  transparent;
+    border   :  0px;
+    color   :  #a1a1a1;
+    font-size  :  16px;
+    }
+
+    div.entry-content #searchform input#s {
+    width   :  93%;
+    }
+
+    #footer-widgets #searchform {
+    margin-top  :  25px;
+    }
+
+    #footer-widgets #searchform input#s {
+    width   :  85%;
+    }
+
+    /*---search button----*/
+    #searchsubmit {
+    position  : absolute;
+    width   :  24px;
+    height   :  24px;
+    text-indent  :  -1000em;
+    background  :  transparent url('../images/search_circle.png') no-repeat scroll 0 0;
+    border   : 0 none;
+    top   : 3px;
+    right   : 3px;
+    }
+
+    #searchsubmit:hover {
+    -ms-filter  :  "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter   :  alpha(opacity=50);
+    opacity   :  .5;
+    cursor   : pointer;
+    }
+
+    /* The following style the lists in the widgets */
+
+    .widget-area ul {
+    list-style		: 	none;
+    margin-left		: 	0;
+    }
+
+    .widget-area ul ul {
+    list-style		: 	disc;
+    margin-left		: 	0;
+    }
+
+    .widget-area ul ul li { /* This styles the sidebar bullet list. */
+    list-style		: 	none;
+    line-height		: 	2;
+    padding-left	: 	0px;
+    border-bottom	: 	1px dotted #ccc;
+    }
+    
+    .widget-area ul ul li a {
+    line-height		: 	1.5;
+    }
+
+    .widget-area ul ul ul {
+    margin-left		: 	0px;
+    }
+
+
+    /* Gallery Styles
+    -------------------------------------------------------------- */
+
+    .galleria-info-text {
+    }
+
+    .galleria-info-title {
+    /*color 			: 	#404040;*/
+    font-size		: 	16px;
+    font-family     :   'Droid Serif', serif;
+    }
+
+    .galleria-info-description {
+    /*color 			: 	#404040;*/
+    font-size		: 	16px;
+    font-family     :   'Droid Serif', serif;
+    }
+
+    .photocrati_nojava {
+    width			:	100%;
+    text-align		:	center;
+    margin			:	0 auto;
+    }
+
+    .photocrati_nojava img {
+    max-width		:	100% !important;
+    margin			:	5px auto;
+    }
+
+    .iframe_wrapper {
+    width			:	100%;
+    text-align		:	center;
+    }
+
+    .gallery {
+    margin-bottom	:	15px;
+    }
+
+    .gallery img {
+    border			:	0px;
+    }
+
+
+    /* Album Styles
+    -------------------------------------------------------------- */
+
+    .album_wrapper {
+    width			:	100%;
+    clear			:	both;
+    margin-bottom	:	15px;
+    }
+    
+    .album_list:after {
+			content: " ";
+			display: table;
+			clear: both;
+    }
+
+    .album_list .image_wrapper {
+    width			:	25%;
+    }
+
+    .album_list .image_wrapper img {
+    max-width		:	90% !important;
+    max-height		:	148px;
+    }
+
+    .album_list .meta_wrapper {
+    width			:	75%;
+    margin-top      :   0px;
+    }
+
+    .album_list h4 {
+    margin-top      :   0px;
+    }
+
+
+    /* E-Commerce Gallery Styles
+    -------------------------------------------------------------- */
+
+    .ecommerce_wrapper {
+    width			:	100%;
+    height			:	auto;
+    position		:	relative;
+    margin-bottom	:	10px;
+    clear			:	both;
+    }
+
+    .ecommerce {
+    float			:	left;
+    text-align		:	center;
+    }
+
+    .ecommerce .meta_wrapper .quantity {
+    width			:	40%;
+    float			:	left;
+    }
+
+    .ecommerce .meta_wrapper .quantity input {
+    padding			:	3px;
+    border			:	1px solid #999;
+    font-size		:	11px;
+    }
+
+    .addto {
+    width			:	100%;
+    float			:	right;
+    text-align		:	right;
+    }
+
+    .addto a, a.iframe {
+    text-decoration	:	none;
+    }
+
+    .addto button, button.addto, button#addto, button#addto2, button#addto3 {
+    display			:	block;
+    width			:	auto;
+    overflow		:	visible;
+    float			:	right;
+    margin			:	2px 0 0 0;
+    background		:   #CCCCCC url(../images/button-overlay.png) repeat-x;
+    border			:	1px solid #999999;
+    font-family		:	"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size		:	11px;
+    line-height		:	130%;
+    text-decoration	:	none;
+    font-weight		:	bold;
+    color			:	#333333;
+    cursor			:	pointer;
+    padding			:	3px 5px; /* Links */
+    -moz-border-radius	: 	8px;
+    border-radius	: 	8px;
+    }
+
+    button#addto2 {
+    padding			:	5px 5px 5px 22px; /* Links */
+    }
+
+    .addto button img, button#addto2 img {
+    border			:	0;
+    clear			:	none;
+    position		:	absolute;
+    margin-left		:	-17px;
+    }
+
+    .addto img {
+    margin			:	0 3px -1px 0 !important;
+    padding			:	0;
+    border			:	none;
+    cursor			:	pointer;
+    }
+
+
+    /* E-Commerce Add to Cart Window
+    -------------------------------------------------------------- */
+    .ecommerce_lightbox #fancybox-overlay{
+        overflow: hidden;
+    }
+    .ecommerce_lightbox #fancybox-content {
+    -webkit-overflow-scrolling: touch !important;
+    overflow: scroll !important;
+    }
+
+    #cart_wrapper {
+    width			:	98%;
+    }
+
+    .cart_header {
+    width			:	100%;
+    padding			:	3px 6px;
+    background		:	#F1F1F1;
+    color			:	#333333;
+    font-size		:	13px;
+    border			:	1px solid #CCCCCC;
+    border-left		:	0;
+    border-right	:	0;
+    }
+
+    .cart_image {
+    width			:	30%;
+    float			:	left;
+    margin-top      :   10px;
+    }
+
+    #shopping_cart_wrapper .cart_image {
+    margin-top      :   0px;
+    }
+
+
+    .checkout_fields_table {
+    width           :   82%;
+    float           :   left;
+    }
+
+
+    .checkout_fields_table th {
+    text-align      :   right;
+    padding-right   :   5px;
+    }
+
+    .checkout_fields_table td {
+    text-align: left;
+    }
+
+    .checkout_fields_table .textfield {
+    width           :   100%;
+    }
+
+    .cart_image img {
+    max-width		:	173px;
+    border			:	1px solid #CCCCCC;
+    }
+
+    .cart_data {
+    width			:	70%;
+    float			:	left;
+    font-size		:	13px;
+    }
+
+    .cart_qty, .cart_desc, .cart_amt, .cart_line {
+    float			:	left;
+    margin			:	2px 0;
+    height			:	30px;
+    font-size		:	12px;
+    }
+
+    .cart_qty {
+    width			:	15%;
+    }
+
+    .cart_qty input {
+    width			:	35px;
+    padding			:	2px;
+    border			:	1px solid #CCCCCC;
+    font-size		:	12px;
+    }
+
+    .cart_desc {
+    width			:	49%;
+    padding-top		:	5px;
+    }
+
+    .cart_amt {
+    width			:	18%;
+    padding-top		:	5px;
+    }
+
+    .cart_line {
+    width			:	18%;
+    padding-top		:	2px;
+    }
+
+    .cart_line input {
+    width			:	55px;
+    border			:	0;
+    padding			:	0;
+    font-size		:	12px;
+    }
+
+    .cart_clear {
+    border-bottom	:	1px solid #CCCCCC;
+    margin-bottom	:	6px;
+    }
+
+    .cart_total {
+    width			:	82%;
+    font-weight		:	bold;
+    float			:	left;
+    padding-top		:	3px;
+    font-size		:	12px;
+    }
+
+    .cart_total_amount {
+    width			:	18%;
+    float			:	left;
+    font-size		:	12px;
+    }
+
+    .cart_total_amount input {
+    width			:	55px;
+    border			:	0;
+    padding			:	0;
+    font-size		:	12px;
+    }
+
+    .titles {
+    height			:	22px;
+    padding-top		:	5px;
+    color			:	#333333;
+    background		:	#F1F1F1;
+    border			:	1px solid #CCCCCC;
+    border-left		:	0;
+    border-right	:	0;
+    }
+
+    .buttons_clear {
+    height			:	20px;
+    }
+
+    .widget_wrapper {
+    width			:	100%;
+    height			:	28px;
+    clear			:	both;
+    position		:	relative;
+    top				:	-5px;
+    }
+
+    #cart_widget {
+    float			:	right;
+    font-size		:	12px;
+    }
+
+    #cart_widget p {
+    margin			:	2px 5px 0 0;
+    }
+
+
+    /* E-Commerce Shopping Cart Page
+    -------------------------------------------------------------- */
+
+    #shopping_cart_wrapper {
+    width			:	100%;
+    margin			:	5px auto;
+    }
+
+    #shopping_cart_wrapper .buttons {
+    width			:	100%;
+    text-align		:	right;
+    margin			:	0 auto;
+    padding-bottom	:	25px;
+    }
+
+    #shopping_cart_wrapper .cart_contents {
+    width			:	100%;
+    clear			:	both;
+    margin			:	10px 0;
+    }
+
+    #shopping_cart_wrapper .item_wrapper {
+    width			:	100%;
+    clear			:	both;
+    margin			:	5px 0;
+    padding			:	5px 0 10px 0;
+    border-bottom	:	1px dashed #CCCCCC;
+    height			:	auto;
+    overflow		: 	auto;
+    }
+
+    #shopping_cart_wrapper .cart_contents .cart_image {
+    width			:	25%;
+    float			:	left;
+    }
+
+    #shopping_cart_wrapper .cart_contents .cart_image img {
+    max-height		:	148px;
+    border			:	1px solid #CCCCCC;
+    }
+
+    #shopping_cart_wrapper .cart_contents .cart_items {
+    width			:	75%;
+    float			:	left;
+    }
+
+    #shopping_cart_wrapper .cart_contents .cart_qty,
+    #shopping_cart_wrapper .cart_contents .cart_desc,
+    #shopping_cart_wrapper .cart_contents .cart_amt,
+    #shopping_cart_wrapper .cart_contents .cart_line {
+    height			:	25px;
+    font-size		:	13px;
+    }
+
+    #shopping_cart_wrapper .cart_contents .cart_qty {
+    width			:	8%;
+    padding-top		:	0;
+    }
+
+    #shopping_cart_wrapper .cart_contents .cart_desc {
+    width			:	70%;
+    padding-top		:	0;
+    }
+
+    #shopping_cart_wrapper .cart_contents .cart_amt {
+    width			:	11%;
+    padding-top		:	0;
+    }
+
+    #shopping_cart_wrapper .cart_contents .cart_line {
+    width			:	11%;
+    padding-top		:	0;
+    font-weight		:	bold;
+    text-align		:	right;
+    }
+
+    #shopping_cart_wrapper .cart_contents .titles {
+    height			:	20px;
+    padding-top		:	2px;
+    }
+
+    #shopping_cart_wrapper .cart_total_wrapper {
+    width			:	260px;
+    padding			:	10px;
+    float			:	right;
+    clear			:	both;
+    border			:	1px solid #CCCCCC;
+    background		:	#F1F1F1;
+    color			:	#333333;
+    }
+
+    #shopping_cart_wrapper .cart_total_wrapper .cart_total {
+    width			:	58%;
+    font-weight		:	bold;
+    float			:	left;
+    padding-top		:	3px;
+    font-size		:	13px;
+    text-align		:	right;
+    }
+
+    #shopping_cart_wrapper .cart_total_wrapper .cart_total_amount {
+    width			:	42%;
+    float			:	left;
+    font-size		:	13px;
+    font-weight		:	bold;
+    text-align		:	right;
+    }
+
+    #shopping_cart_wrapper .cart_total_wrapper .cart_total_amount input {
+    width			:	60px;
+    border			:	0;
+    padding			:	0;
+    font-size		:	13px;
+    text-align		:	right;
+    font-weight		:	bold;
+    color			:	#333333;
+    background		:	#F1F1F1;
+    }
+
+    .checkout_fields {
+    display			:	none;
+    width			:	100%;
+    clear			:	both;
+    padding			:	10px 0;
+    text-align		:	center;
+    }
+
+    .checkout_fields .checkout_wrapper {
+    width			:	65%;
+    min-height		:	300px;
+    clear			:	both;
+    margin			:	0 auto;
+    padding			:	15px;
+    text-align		:	left;
+    }
+
+    .checkout_fields .checkout_wrapper .lable {
+    width			:	30%;
+    float			:	left;
+    font-weight		:	bold;
+    margin-bottom	:	10px;
+    }
+
+    .checkout_fields .checkout_wrapper .field {
+    width			:	70%;
+    float			:	left;
+    text-align		:	right;
+    margin-bottom	:	10px;
+    }
+
+    .checkout_fields .checkout_wrapper .field input {
+    width			:	350px;
+    }
+
+    .checkout_fields .checkout_wrapper .field input,
+    .checkout_fields .checkout_wrapper .field select {
+    padding			:	3px;
+    border			:	1px solid #CCCCCC;
+    font-size		:	13px;
+    }
+
+    .checkout_footer {
+    width			:	100%;
+    clear			:	both;
+    padding			:	0 0 15px 0;
+    font-size		:	12px;
+    text-align		:	justify;
+    }
+
+    .checkout_image {
+    width			:	100%;
+    clear			:	both;
+    padding			:	10px 0 0 0;
+    text-align		:	right;
+    }
+
+
+    /* Footer Wrapper
+    -------------------------------------------------------------- */
+
+    .footer_container { /* This sets the size and font styles of the footer area */
+    clear: both;
+    width: auto;
+    margin:	0 auto;
+    margin: 0;
+    margin-left: 270px;
+    }
+
+    .footer_wrapper { /* This sets the size and font styles of the footer area */
+    clear: both;
+    width: auto;
+    margin:	0 auto;
+		width: 100%;
+		min-width: none;
+		max-width: 100%;
+    margin: 0;
+    padding: 5px 0;
+    text-align 		: 	center;
+    background		:	rgba(255,255,255,0.85);
+    min-height			:	500px;
+    clear			:	both;
+    z-index			:	2;
+    }
+		
+    /* Footer Widget Styles
+    -------------------------------------------------------------- */
+
+    .footer-widget-area { /* This is the footer widget wrapper */
+    background:	none;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    margin: 0;
+    min-height		:	50px;
+    color			:	#404040;
+    font-size		:	16px;
+    font-family     :   'Droid Serif', serif;
+    text-decoration :   none;
+    text-transform  :   normal;
+    }
+
+    .footer-widget-container { /* This is the footer widget container */
+    display			:	inline-block;
+    background		:	none;
+    height			:	auto;
+    float			:	left;
+    padding			:	10px;
+    text-align		:	left;
+    margin-bottom	:	5px;
+    }
+
+    .footer-widget-container .widget-title { /* This sets the style of the footer widget titles */
+    font-size		:	22px;
+    font-family     :   'Oswald', serif;
+    color			:	#000000;
+    text-transform  :   uppercase;
+    text-decoration :   none;
+    }
+
+    .footer-widget-container a { /* This sets the color of the footer widget links */
+    color			:	#6e6e6e;
+    }
+
+    .footer-widget-container a:hover,
+    .footer-widget-container a:active { /* This sets the color and style of the hover and active states of the footer widget links */
+    color			:	#8d8d8d;
+    text-decoration	:	none;
+    }
+
+    #footer-widgets .footer-widget-container ul {
+    margin-left: 0px;
+    }
+
+    #footer-widgets .footer-widget-container ul li { /* This styles the footer widget bullet styles */
+    list-style-type	: 	none;
+    line-height		: 	2;
+    padding-left	: 	0px;
+    border-bottom	: 	1px dotted #999;
+    }
+
+    #footer-widgets .footer-widget-container ul li a:visited { /* This styles the footer widget bullet styles */
+    color			: 	#404040;
+    }
+
+
+    /* Footer Style
+    -------------------------------------------------------------- */
+
+    #footer { /* This sets the size and font styles of the footer area */
+    clear			: 	both;
+    width			: 	auto;
+    text-align 		: 	center;
+    margin			:	15px auto 15px auto;
+    padding-top 	: 	5px;
+    color 			: 	#404040;
+    font-size		: 	16px;
+    font-family     :   'Droid Serif', serif;
+    }
+
+    #footer a { /* This sets the color of the footer links */
+    color			:	#6e6e6e;
+    }
+
+    #footer a:hover,
+    #footer a:active { /* This sets the color and style of the hover and active states of the footer links */
+    color			:	#8d8d8d;
+    text-decoration	:	none;
+    }
+
+    #footer #site-info {
+    clear			: 	both;
+    margin			:	5px 7px 0 7px;
+    font-size		:	14px;
+    }
+
+    #footer #site-info p {
+    z-index			:	3;
+    }
+    
+    /* background slideshow styles */ 
+    #supersized {
+    	margin-left:0;
+    }
+		#supersized li {
+			padding-left:0;
+		}
+		
+		
+    /* responsive CSS Code
+    -------------------------------------------------------------- */
+		@media screen and (min-width: 0px) and (max-width: 1024px) {
+		  #content-sm {
+				float: none;
+				clear: both;
+		  	width: 100%;
+		  }
+		  
+			#sidebar {
+				float: none;
+				clear: both;
+		  	width: 100%;
+			}
+		}
+
+    /* Custom CSS Code
+    -------------------------------------------------------------- */
+#sidebar {border-left: 1px double #555555;}
+#main_container #container {margin-top: 65px;}
+.home #main_container #container {margin-top: 65px;}
+
+
+.box{
+	  padding: 30px 100px; 
+text-align:justified;
+
+}		
+    /* desktop only CSS adjustments that override custom CSS
+    -------------------------------------------------------------- */
+		@media screen and (min-width: 1025px) {
+		}
+
+		
+    /* responsive CSS adjustments that override custom CSS
+    -------------------------------------------------------------- */
+		@media screen and (min-width: 0px) and (max-width: 1024px) {
+		
+    #main_container {
+    	width: auto;
+    	min-width: none;
+    	max-width: none;
+    }
+    #wrapper {
+    	width: auto;
+    	min-width: none;
+    	max-width: none;
+			margin-left: 0;
+			margin-right: 0;
+    }
+		#main {
+    	width: auto;
+    	min-width: none;
+    	max-width: none;
+			margin-top: 0;
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		/* cancel fixed positioning on small screens */
+		#header {
+			position: static;
+			max-height: none;
+			width: auto;
+			height: auto;
+		}
+		
+		#header:before,
+		#header:after {
+			content: " ";
+			display: table;
+		}
+		#header:after {
+			clear: both;
+		}
+    #masthead {
+    	width: auto;
+    	min-width: none;
+    	max-width: none;
+		  text-align: center;
+    }
+
+    #branding {
+		  width: auto;
+    	float: none;
+		  clear: both;
+		  text-align: center;
+		  margin: 0;
+		  padding-top: 15px;
+		  padding-bottom: 25px;
+    }
+    #branding h1 {
+		  text-align: center;
+    }
+    #branding #blog-title {
+			margin-left: 0;
+			margin-right: 0;
+		  text-align: center;
+    }
+    #branding #blog-title h1 {
+			margin-left: 0;
+			margin-right: 0;
+		  text-align: center;
+    }
+    #branding #blog-title .description {
+			margin-left: 0;
+			margin-right: 0;
+		  text-align: center;
+    }
+    
+	  #content-sm {
+	  	width: auto;
+	  	margin-left: 10px;
+	  	margin-right: 10px;
+	  }
+	  
+		#sidebar {
+			border: none;
+		}
+    .footer_container {
+    	width: auto;
+    	min-width: none;
+    	max-width: none;
+			margin-left: 0;
+    }
+    .footer_wrapper {
+    	width: auto;
+    	min-width: none;
+    	max-width: none;
+			margin-left: 0;
+    }
+    .footer-widget-area { 
+    	width: auto;
+    	min-width: none;
+    	max-width: none;
+    	margin-left: 10px;
+    	margin-right: 10px;
+    }
+		.footer-widget-container {
+			display: block;
+			float: none;
+			clear: both;
+	  	width: auto;
+	  	margin: 0 auto 10px auto;
+		}			
+			
+    
+		/* adjustments for responsive menus */
+    #menu_wrapper {
+		  width: auto;
+    	float: none;
+		  clear: both;
+		  margin: 0 auto 10px auto;
+		  display: inline-block;
+		  text-align: center;
+    }
+		
+		.photocrati-menu > ul > li {
+			display: block;
+			clear: both;
+		}
+		
+		.photocrati-menu > ul > li > a,
+		.photocrati-menu > ul > li > a:link,
+		.photocrati-menu > ul > li > a:visited,
+		.photocrati-menu > ul > li > a:hover,
+		.photocrati-menu > ul > li > a:active {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		
+		.photocrati-menu .menu-item-has-children ul {
+			display: none;
+			position: static;
+			top: auto;
+			left: auto;
+			text-align: center;
+		}
+		
+		.photocrati-menu .menu-item-has-children .menu-item-has-children ul {
+			display: none;
+			position: static;
+			left: auto;
+			top: auto;
+		}
+		
+		.photocrati-menu .menu-item-has-children .menu-item-has-children ul li a {
+			padding-left: 28px;
+		}
+
+    /* Custom CSS Code for mobile
+    -------------------------------------------------------------- */
+		}
+    
+		/* for high pixel density displays */
+		@media
+		only screen and (-webkit-min-device-pixel-ratio: 1.3),
+		only screen and (   min--moz-device-pixel-ratio: 1.3),
+		only screen and (   -moz-min-device-pixel-ratio: 1.3),
+		only screen and (     -o-min-device-pixel-ratio: 13/10),
+		only screen and (        min-device-pixel-ratio: 1.3),
+		only screen and (                min-resolution: 120dpi),
+		only screen and (                min-resolution: 1.3dppx) { 
+		
+h1 {
+font-size: 24pt;
+}
+h2 {
+font-size: 19.5pt;
+}
+h3 {
+font-size: 18pt;
+}
+h4 {
+font-size: 16.5pt;
+}
+h5 {
+font-size: 15pt;
+}
+.photocrati-menu a {
+font-size: 12pt;
+}
+.photocrati-menu ul li ul li a:link,
+.photocrati-menu ul li ul li a:visited,
+.photocrati-menu ul li.current_page_item ul li a:link,
+.photocrati-menu ul li.current_page_item ul li a:visited {
+font-size: 11.25pt;
+}
+.footer_menu ul li {
+font-size: 10.5pt;
+}
+#branding h1 {
+font-size: 27pt;
+}
+#branding .description {
+font-size: 11.25pt;
+}
+#content,
+#content-sm {
+font-size: 12pt;
+}
+.entry-meta,
+.entry-utility {
+font-size: 12pt;
+}
+.entry-meta,
+.entry-utility {
+font-size: 7.5pt;
+}
+p#comment-notes {
+font-size: 9.75pt;
+}
+div.comment-meta a.commentauthor:link,
+a.commentauthor:visited {
+font-size: 13.5pt;
+}
+div.comment-meta .commentdate {
+font-size: 10.5pt;
+}
+div.comment-meta .commentpermalink {
+font-size: 9pt;
+}
+.comment-reply-link {
+font-size: 10.5pt;
+}
+div#cancel-comment-reply,
+span.loggedin,
+span.logout {
+font-size: 9.75pt;
+}
+#comments div#form-section-comment textarea {
+font-size: 10.5pt;
+}
+#comments input#submit {
+font-size: 9.75pt;
+}
+#sidebar {
+font-size: 12pt;
+}
+.widget-title,
+.widgettitle {
+font-size: 16.5pt;
+}
+.widget_nav_menu ul.menu li a:link,
+.widget_nav_menu ul.menu li a:visited,
+.widget_nav_menu ul.menu li .current_page_item a:visited,
+.widget_nav_menu ul.menu li a:hover {
+font-size: 12pt;
+}
+#searchform input#s {
+font-size: 12pt;
+}
+.galleria-info-title {
+font-size: 12pt;
+}
+.galleria-info-description {
+font-size: 12pt;
+}
+.ecommerce .meta_wrapper .quantity input {
+font-size: 8.25pt;
+}
+.addto button,
+button.addto,
+button#addto,
+button#addto2,
+button#addto3 {
+font-size: 8.25pt;
+}
+.cart_header {
+font-size: 9.75pt;
+}
+.cart_qty,
+.cart_desc,
+.cart_amt,
+.cart_line {
+font-size: 9pt;
+}
+.cart_qty input {
+font-size: 9pt;
+}
+.cart_line input {
+font-size: 9pt;
+}
+.cart_total {
+font-size: 9pt;
+}
+.cart_total_amount {
+font-size: 9pt;
+}
+.cart_total_amount input {
+font-size: 9pt;
+}
+#cart_widget {
+font-size: 9pt;
+}
+#shopping_cart_wrapper .cart_contents .cart_qty,
+#shopping_cart_wrapper .cart_contents .cart_desc,
+#shopping_cart_wrapper .cart_contents .cart_amt,
+#shopping_cart_wrapper .cart_contents .cart_line {
+font-size: 9.75pt;
+}
+#shopping_cart_wrapper .cart_total_wrapper .cart_total {
+font-size: 9.75pt;
+}
+#shopping_cart_wrapper .cart_total_wrapper .cart_total_amount {
+font-size: 9.75pt;
+}
+#shopping_cart_wrapper .cart_total_wrapper .cart_total_amount input {
+font-size: 9.75pt;
+}
+.checkout_footer {
+font-size: 9pt;
+}
+.footer-widget-area {
+font-size: 12pt;
+}
+.footer-widget-container .widget-title {
+font-size: 16.5pt;
+}
+#footer {
+font-size: 12pt;
+}
+#footer #site-info {
+font-size: 10.5pt;
+}
+		}
+
+		/* for high pixel density displays */
+		@media
+		only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (   min--moz-device-pixel-ratio: 2),
+		only screen and (   -moz-min-device-pixel-ratio: 2),
+		only screen and (     -o-min-device-pixel-ratio: 2/1),
+		only screen and (        min-device-pixel-ratio: 2),
+		only screen and (                min-resolution: 192dpi),
+		only screen and (                min-resolution: 2dppx) { 
+		
+h1 {
+font-size: 24pt;
+}
+h2 {
+font-size: 19.5pt;
+}
+h3 {
+font-size: 18pt;
+}
+h4 {
+font-size: 16.5pt;
+}
+h5 {
+font-size: 15pt;
+}
+.photocrati-menu a {
+font-size: 12pt;
+}
+.photocrati-menu ul li ul li a:link,
+.photocrati-menu ul li ul li a:visited,
+.photocrati-menu ul li.current_page_item ul li a:link,
+.photocrati-menu ul li.current_page_item ul li a:visited {
+font-size: 11.25pt;
+}
+.footer_menu ul li {
+font-size: 10.5pt;
+}
+#branding h1 {
+font-size: 27pt;
+}
+#branding .description {
+font-size: 11.25pt;
+}
+#content,
+#content-sm {
+font-size: 12pt;
+}
+.entry-meta,
+.entry-utility {
+font-size: 12pt;
+}
+.entry-meta,
+.entry-utility {
+font-size: 7.5pt;
+}
+p#comment-notes {
+font-size: 9.75pt;
+}
+div.comment-meta a.commentauthor:link,
+a.commentauthor:visited {
+font-size: 13.5pt;
+}
+div.comment-meta .commentdate {
+font-size: 10.5pt;
+}
+div.comment-meta .commentpermalink {
+font-size: 9pt;
+}
+.comment-reply-link {
+font-size: 10.5pt;
+}
+div#cancel-comment-reply,
+span.loggedin,
+span.logout {
+font-size: 9.75pt;
+}
+#comments div#form-section-comment textarea {
+font-size: 10.5pt;
+}
+#comments input#submit {
+font-size: 9.75pt;
+}
+#sidebar {
+font-size: 12pt;
+}
+.widget-title,
+.widgettitle {
+font-size: 16.5pt;
+}
+.widget_nav_menu ul.menu li a:link,
+.widget_nav_menu ul.menu li a:visited,
+.widget_nav_menu ul.menu li .current_page_item a:visited,
+.widget_nav_menu ul.menu li a:hover {
+font-size: 12pt;
+}
+#searchform input#s {
+font-size: 12pt;
+}
+.galleria-info-title {
+font-size: 12pt;
+}
+.galleria-info-description {
+font-size: 12pt;
+}
+.ecommerce .meta_wrapper .quantity input {
+font-size: 8.25pt;
+}
+.addto button,
+button.addto,
+button#addto,
+button#addto2,
+button#addto3 {
+font-size: 8.25pt;
+}
+.cart_header {
+font-size: 9.75pt;
+}
+.cart_qty,
+.cart_desc,
+.cart_amt,
+.cart_line {
+font-size: 9pt;
+}
+.cart_qty input {
+font-size: 9pt;
+}
+.cart_line input {
+font-size: 9pt;
+}
+.cart_total {
+font-size: 9pt;
+}
+.cart_total_amount {
+font-size: 9pt;
+}
+.cart_total_amount input {
+font-size: 9pt;
+}
+#cart_widget {
+font-size: 9pt;
+}
+#shopping_cart_wrapper .cart_contents .cart_qty,
+#shopping_cart_wrapper .cart_contents .cart_desc,
+#shopping_cart_wrapper .cart_contents .cart_amt,
+#shopping_cart_wrapper .cart_contents .cart_line {
+font-size: 9.75pt;
+}
+#shopping_cart_wrapper .cart_total_wrapper .cart_total {
+font-size: 9.75pt;
+}
+#shopping_cart_wrapper .cart_total_wrapper .cart_total_amount {
+font-size: 9.75pt;
+}
+#shopping_cart_wrapper .cart_total_wrapper .cart_total_amount input {
+font-size: 9.75pt;
+}
+.checkout_footer {
+font-size: 9pt;
+}
+.footer-widget-area {
+font-size: 12pt;
+}
+.footer-widget-container .widget-title {
+font-size: 16.5pt;
+}
+#footer {
+font-size: 12pt;
+}
+#footer #site-info {
+font-size: 10.5pt;
+}
+		}

@@ -1,0 +1,97 @@
+
+    .menu ul, .menu ul * { /* This sets the width of the menu */
+    list-style		: 	none;
+    margin			: 	0 0 0 0;
+    padding			:	0;
+    }
+
+    .menu ul { /* This sets the line height of the menu */
+    line-height		:	1.0em;
+    }
+
+    .menu a { /* This controls the font size and position of the main menu links */
+    position		:	relative;
+    display			: 	block;
+    float			: 	left;
+    }
+
+    .menu a:link,.menu a:visited { /* This sets the color and style of the main menu links */
+    display 		: 	inline;
+    float 			: 	none;
+    padding 		: 	0 17px 0px 17px;
+    }
+
+    .menu ul li { /* This sets the position of the main menu items */
+    position		:	relative;
+    display			: 	inline;
+    margin			:	0 0 0 0;
+    }
+
+    .menu ul li { /* This sets the position of the custom main menu items */
+    position		:	relative;
+    display			: 	inline;
+    margin			:	0 -3px 0 0;
+    }
+
+    .menu ul li:hover {
+    visibility		:	inherit; /* fixes IE7 'sticky bug' */
+    }
+
+    .menu ul li ul { /* This sets the position of the dropdown menu */
+    display			:	block;
+    visibility		:	hidden;
+    position		:	absolute;
+    top				:	-999em;
+    margin			:	0 0 0 0;
+    width			:	10em; /* left offset of submenus need to match (see below) */
+    }
+
+    .menu ul li:hover ul,
+    .menu ul li ul { /* This sets the position and z-index of the dropdown menu */
+    left			:	0;
+    top				:	2.2em; /* match top ul list item height */
+    z-index			:	99;
+    }
+
+    .menu ul li ul li { /* This sets the size and transparency of the dropdown items */
+    display 		: 	block;
+    width			:	100%;
+    filter			:	alpha(opacity=90);
+    opacity			: 	0.90;
+    -moz-opacity	:	0.90;
+    margin			:	0;
+    }
+
+    .menu ul li ul li a:link,
+    .menu ul li ul li a:visited,
+    .menu ul li.current_page_item ul li a:link,
+    .menu ul li.current_page_item ul li a:visited { /* This sets the color and style of the drop down menu links */
+    display 		: 	block;
+    padding 		: 	5px;
+    text-align 		: 	left;
+    }
+
+    /* The remaining items below are essential positioning styles for the menus */
+
+    .menu ul li:hover li ul,
+    .menu ul li li ul {
+    top				:	-999em;
+    }
+
+    .menu ul li li:hover ul,
+    .menu ul li li ul {
+    left			:	10em; /* match ul width */
+    top				:	0;
+    }
+
+    .menu ul li li:hover li ul,
+    .menu ul li li li ul {
+    top				:	-999em;
+    }
+
+    .menu ul li li li:hover ul,
+    .menu ul li li li ul {
+    left			:	10em; /* match ul width */
+    top				:	0;
+    }
+

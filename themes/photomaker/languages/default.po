@@ -1,0 +1,238 @@
+# Copyright (C) 2014 PhotoMaker Theme Pro
+# This file is distributed under the same license as the WordPress package.
+msgid ""
+msgstr ""
+"Project-Id-Version: PhotoMaker Pro Theme Pro 1.0\n"
+"Report-Msgid-Bugs-To: admin@inkthemes.comPOT-Creation-Date: 2014-02-01 12:47:23+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-05-01 16:25+0530\n"
+"Last-Translator: Urooj Khan <uroojkhan171@gmail.com>\n"
+"Language-Team: \n"
+"POT-Creation-Date: \n"
+
+#: define_template.php:2
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: define_template.php:3
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
+msgstr ""
+
+#: define_template.php:4
+msgid "Most Used Categories"
+msgstr ""
+
+#: define_template.php:5
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: define_template.php:6
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: define_template.php:7
+msgid "Nothing Found here"
+msgstr ""
+
+#: define_template.php:8
+msgid "Sorry, but nothing matched your search criteria."
+msgstr ""
+
+#: define_template.php:9
+msgid "Categories"
+msgstr ""
+
+#: define_template.php:10
+msgid "Archives"
+msgstr ""
+
+#: define_template.php:11
+msgid "Blog Archives"
+msgstr ""
+
+#: define_template.php:12
+msgid "Category Archives: %s"
+msgstr ""
+
+#: define_template.php:13
+msgid "Page %s"
+msgstr ""
+
+#: define_template.php:14
+msgid "Search Results for: %s"
+msgstr ""
+
+#: define_template.php:15
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: define_template.php:16
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: define_template.php:17
+msgid "Location Map"
+msgstr ""
+
+#: define_template.php:18
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: define_template.php:19
+msgid "Author Archives: %s"
+msgstr ""
+
+#: define_template.php:20
+msgid "About: %s"
+msgstr ""
+
+#: define_template.php:21
+msgid "Home"
+msgstr ""
+
+#: define_template.php:22
+msgid "This entry was posted in %1$s"
+msgstr ""
+
+#: define_template.php:23
+msgid "permalink"
+msgstr ""
+
+#: define_template.php:24
+msgid "Bookmark the"
+msgstr ""
+
+#: define_template.php:25
+msgid "Primary Widget Area"
+msgstr ""
+
+#: define_template.php:26
+msgid "The primary widget area"
+msgstr ""
+
+#: define_template.php:27
+msgid "Secondary Widget Area"
+msgstr ""
+
+#: define_template.php:28
+msgid "The secondary widget area"
+msgstr ""
+
+#: define_template.php:29
+msgid "Submit Comment"
+msgstr ""
+
+#: define_template.php:30
+msgid "Leave a Comment"
+msgstr ""
+
+#: define_template.php:39
+msgid "&larr; Older posts"
+msgstr ""
+
+#: define_template.php:40
+msgid "Newer posts &rarr;"
+msgstr ""
+
+#: define_template.php:41
+msgid "&larr; Previous Post"
+msgstr ""
+
+#: define_template.php:42
+msgid "Next Post &rarr;"
+msgstr ""
+
+#: define_template.php:43
+msgid "Read More"
+msgstr ""
+
+#: define_template.php:44
+msgid "Send Your Message"
+msgstr ""
+
+#: define_template.php:45
+msgid "Return to %s"
+msgstr ""
+
+#: define_template.php:46
+msgid "By %2$s"
+msgstr ""
+
+#: define_template.php:47
+msgid "View all posts by %s"
+msgstr ""
+
+#: define_template.php:48
+msgid "Published %2$s"
+msgstr ""
+
+#: define_template.php:49
+msgid "Full size is %s pixels"
+msgstr ""
+
+#: define_template.php:50
+msgid "Link to full-size image"
+msgstr ""
+
+#: define_template.php:51
+msgid "Edit"
+msgstr ""
+
+#: define_template.php:52
+msgid "Continue reading &rarr;"
+msgstr ""
+
+#: define_template.php:53
+msgid "Pages:"
+msgstr ""
+
+#: define_template.php:54
+msgid "Continue Reading..."
+msgstr ""
+
+#: define_template.php:55
+msgid "Posted by"
+msgstr ""
+
+#: define_template.php:56
+msgid "and tagged"
+msgstr ""
+
+#: define_template.php:57
+msgid "Submit Message"
+msgstr ""
+
+#: define_template.php:58
+msgid "Your Name"
+msgstr ""
+
+#: define_template.php:59
+msgid "Your Email"
+msgstr ""
+
+#: define_template.php:60
+msgid "Your Message"
+msgstr ""
+
+#: define_template.php:61
+msgid "Search"
+msgstr ""
+
+#: define_template.php:62
+msgid "Comments are closed."
+msgstr ""
+
+#: define_template.php:63
+msgid "No Comments"
+msgstr ""
+
+#: define_template.php:64
+msgid "One Comments"
+msgstr ""
+
+#: define_template.php:65
+msgid "% Comments"
+msgstr ""
+

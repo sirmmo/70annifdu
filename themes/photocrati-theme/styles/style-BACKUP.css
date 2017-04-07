@@ -1,0 +1,617 @@
+/* YOU CAN USE THIS TO RESTORE THE DEFAULT STYLE.CSS IF ANYTHING HAPPENS TO THE GENERATED FILE */
+
+/* Reset default browser styles */
+@import url('resets/reset.css');
+
+/* Rebuild default browser styles */
+@import url('resets/rebuild.css');
+
+/* Basic WordPress Styles */
+@import url('resets/wp.css');
+
+/* General Styles
+-------------------------------------------------------------- */
+
+/* The following section sets the basic body, H1-H5 and link styles */
+
+html {
+	height			:	100%;
+}
+
+body {
+	background		: 	0 0px #000000;
+    padding-top 	: 	0;
+	margin-top 		: 	0;
+	height			:	100%;
+}
+
+h1 { /* The H1 tag is used for page titles */
+	font-size 		: 	22px;
+	font-weight		:	bold;
+    color			: 	#FFFFFF;
+    padding-bottom	:	15px;
+    margin-bottom	:	10px;
+    border-bottom	:	1px solid #E1E1E1;
+	clear			:	none;
+}
+
+h1 a:link, .h1 a:visited {
+	color			: 	#FFFFFF;
+}
+
+h2 { /* The H2 tag is used for post titles */
+	font-size 		: 	20px;
+	font-weight		:	bold;
+    color			: 	#FFFFFF;
+	clear			:	none;
+}
+
+h2 a:link, .h2 a:visited {
+	color			: 	#FFFFFF;
+}
+
+h3 {
+	font-size 		: 	18px;
+	font-weight		:	bold;
+    color			: 	#FFFFFF;
+	clear			:	none;
+}
+
+h3 a:link, .h1 a:visited {
+	color			: 	#FFFFFF;
+}
+
+h4 {
+	font-size 		: 	16px;
+	font-weight		:	bold;
+    color			: 	#FFFFFF;
+	clear			:	none;
+}
+
+h4 a:link, .h4 a:visited {
+	color			: 	#FFFFFF;
+}
+
+h5 {
+	font-size 		: 	14px;
+	font-weight		:	bold;
+    color			: 	#FFFFFF;
+	clear			:	none;
+}
+
+h5 a:link, .h5 a:visited {
+	color			: 	#FFFFFF;
+}
+
+a:link,a:visited { /* This styles the majority of the on page links. The sidebar links can be styled seperately */
+	color 			: 	#eb941a;
+	text-decoration : 	none;
+}
+
+a:hover,a:active {
+	color 			: 	#ff6600;
+	text-decoration : 	none;
+}
+
+
+/* General Page Styles
+-------------------------------------------------------------- */
+
+#main_container {
+   min-height		:	100%;
+}
+
+#wrapper { /* This sets the width of the entire site */
+	position 		: 	relative;
+	width 			: 	960px;
+	margin 			: 	0 auto;
+	overflow		:	auto;
+	padding-bottom	:	225px;
+}
+
+#container { /* This sets the width of the main content area */
+	float			: 	left;
+	margin			: 	0 0 15px 0;
+	width			: 	940px;
+    padding			: 	10px;
+	background		: 	transparent;
+    border			:	0px solid #FFFFFF;
+}
+
+
+/* Menu Styles
+-------------------------------------------------------------- */
+
+#menu_wrapper { /* This is the main menu container */
+	    width 			: 	100%;
+    margin			: 	0 0 1.5em 0;
+	position 		: 	absolute;
+	top 			: 	0;
+	left 			: 	0;
+	text-align 		: 	center;
+    	overflow 		: 	visible;
+	padding-top 	: 	22px;
+    z-index			:	2;
+}
+
+.menu ul, .menu ul * { /* This sets the width of the menu */
+	list-style		: 	none;
+	margin			: 	0;
+	padding			:	0;
+}
+
+.menu ul { /* This sets the line height of the menu */
+	line-height		:	1.0;
+}
+
+.menu a { /* This controls the font size and position of the main menu links */
+	position		:	relative;
+	display			: 	block;
+	float			: 	left;
+    font-size 		: 	12px;
+}
+
+.menu a:link,.menu a:visited { /* This sets the color and style of the main menu links */
+	display 		: 	inline;
+	float 			: 	none;
+	text-decoration : 	none;
+	color 			: 	#FFFFFF;
+    font-family		:	Arial, Helvetica, sans-serif;
+	font-weight 	: 	bold;
+	text-transform 	: 	uppercase;
+	padding 		: 	22px 17px 12px 17px;
+	background 		: 	#000000;
+}
+
+.menu a:hover,.menu a:active,
+.menu .current_page_item a:link,
+.menu .current_page_item a:visited  { /* This sets the color and style of the hover and active states of the main menu links */
+	color 			: 	#704100;
+	background 		: 	#eb941a;
+}
+
+.menu .current_page_item ul a:link,
+.menu .current_page_item ul a:visited { /* This sets the color and style of the current page item on the main menu links */
+	color 			: 	#704100;
+	background 		: 	#eb941a;
+}
+
+.menu .current_page_item ul li a:hover,
+.menu .current_page_item ul li a:active { /* This sets the color and style of the hover and active states of the current page item on the main menu links */
+	color 			: 	#704100;
+	background 		: 	#eb941a;
+}
+
+.menu ul li { /* This sets the position of the main menu items */
+	position		:	relative;
+	display			: 	inline;
+    margin			:	0 0 0 0;
+}
+
+.menu ul li { /* This sets the position of the custom main menu items */
+	position		:	relative;
+	display			: 	inline;
+    margin			:	0 -3px 0 0;
+}
+
+.menu ul li:hover {
+	visibility		:	inherit; /* fixes IE7 'sticky bug' */
+}
+
+.menu ul li ul { /* This sets the position of the dropdown menu */
+	display			: 	none;
+    position		:	absolute;
+	top				:	-999em;
+    margin			:	0 0 0 0;
+	width			:	10em; /* left offset of submenus need to match (see below) */
+    border-top		:	2px solid #704100;
+}
+
+.menu ul li:hover ul,
+.menu ul li ul { /* This sets the position and z-index of the dropdown menu */
+	left			:	0;
+	top				:	2.2em; /* match top ul list item height */
+	z-index			:	99;
+}
+
+.menu ul li ul li { /* This sets the size and transparency of the dropdown items */
+	display 		: 	block;
+	width			:	100%;
+	filter			:	alpha(opacity=90);
+	opacity			: 	0.90;
+	-moz-opacity	:	0.90;
+    margin			:	0;
+}
+
+.menu ul li ul li a:link,
+.menu ul li ul li a:visited,
+.menu ul li.current_page_item ul li a:link,
+.menu ul li.current_page_item ul li a:visited { /* This sets the color and style of the drop down menu links */
+	display 		: 	block;
+	padding 		: 	5px;
+	text-align 		: 	left;
+	color 			: 	#FFFFFF;
+	background 		: 	#474747;
+    font-size 		: 	12px;
+    font-family		:	Arial, Helvetica, sans-serif;
+}
+
+.menu ul li ul li a:hover,
+.menu ul li ul li a:active,
+.menu ul li.current_page_item ul li a:hover,
+.menu ul li.current_page_item ul li a:active,
+.menu ul li ul li.current_page_item a:link,
+.menu ul li ul li.current_page_item a:visited { /* This sets the color and style of the hover, active & current states of the drop down menu links */
+	color 			: 	#704100;
+	background 		: 	#eb941a;
+}
+
+ /* The remaining items below are essential positioning styles for the menus */
+
+.menu ul li:hover li ul,
+.menu ul li li ul {
+	top				:	-999em;
+}
+
+.menu ul li li:hover ul,
+.menu ul li li ul {
+	left			:	10em; /* match ul width */
+	top				:	0;
+}
+
+.menu ul li li:hover li ul,
+.menu ul li li li ul {
+	top				:	-999em;
+}
+
+.menu ul li li li:hover ul,
+.menu ul li li li ul {
+	left			:	10em; /* match ul width */
+	top				:	0;
+}
+
+.footer_menu ul, .footer_menu ul * { /* This sets the width of the footer menu */
+	overflow 		: 	visible;
+    z-index			:	2;
+    list-style		: 	none;
+    margin			:	0 auto;
+	padding			:	0;
+}
+
+.footer_menu ul li { /* This sets the position of the footer menu items */
+	position		:	relative;
+	display			: 	inline;
+    margin			:	0 7px 0 7px;
+    font-weight		:	bold;
+}
+
+
+/* Header Styles
+-------------------------------------------------------------- */
+
+#header { /* This sets the color of the header */
+	background		:	 #000000;
+    width			:	100%;
+    height			:	140px;
+    margin-bottom	:	10px;
+}
+
+#masthead { /* This sets total width and position of the header */
+    width			:	960px;
+    margin			:	0 auto;
+}
+
+#branding { /* This sets the size and position of the logo area on the header */
+    display			:	block;
+		width 			: 	100%;
+	text-align 		: 	center;
+    margin			:	0 0 24px 0;
+        padding			:	60px 0 20px 0;
+}
+
+#branding a { /* This sets the color and style of the wordpress title */
+    text-decoration	:	none;
+}
+
+#branding h1 { /* This sets the color of the wordpress title */
+	font-size		:	24px;
+    font-family		:	Georgia, "Times New Roman", Times, serif;
+	color			: 	#c78425;
+	line-height		:	26px;
+    border			:	0;
+	margin-top		:	15px;
+    margin-bottom	:	5px;
+    padding			:	0;
+	text-transform	:	uppercase;
+}
+
+#branding .description { /* This sets the font size and color for the description line if you are using the Wordpress title and description */
+	font-size		:	12px;
+    font-family		:	Georgia, "Times New Roman", Times, serif;
+	color			: 	#b5b5b5;
+		}
+
+
+/* Content Styles
+-------------------------------------------------------------- */
+
+#content { /* This sets the width of the page content area  */
+	position		:	relative;
+    margin			: 	0;
+	width			:	100%;
+    z-index			:	1;
+}
+
+#content-sm { /* This sets the width of the blog content area  */
+	width			:	68%;
+    float			:	left;
+    padding-right	:	2%; /* IMPORTANT! Sets a small margin between the blog content and the sidebar  */
+}
+
+#content, #content-sm { /* This sets the font size and style on the blog and pages  */
+	color 			: 	#FFFFFF;
+    font-size		: 	12px;
+    font-family		:	Arial, Helvetica, sans-serif;
+}
+
+.post { /* This sets a small margin at the bottom of posts  */
+	margin			: 	0 0 3em 0;	
+}
+
+.entry-content, .entry-summary { /* This sets a small margin at the top of the post content to make space between the title/meta area  */
+	margin			: 	1.5em 0 0 0;
+}
+
+blockquote { /* This styles blockquotes in blog posts  */
+	border-left		:	2px solid #E1E1E1;
+	margin-left		:	25px;
+	padding-left	:	15px;
+}
+
+
+/* Post Styles
+-------------------------------------------------------------- */
+
+.navigation { /* This sets a small margin below the post navigation on a single post */
+	margin			: 	0 0 1.5em 0;
+	overflow		: 	auto;	
+}
+
+.size-full,
+.entry-content img { /* This sets a border around images in posts */
+	border 			: 	5px solid #e8e7e7;
+}
+
+.entry-meta,
+.entry-utility { /* This sets the font size and style on post meta. This is the date, post by and comment links below the post title. */
+	color 			: 	#FFFFFF;
+    font-size		: 	12px;
+    font-family		:	Arial, Helvetica, sans-serif;
+	font-style 		: 	italic;
+	clear 			: 	both;
+}
+
+
+/* Post Comment Styles
+-------------------------------------------------------------- */
+
+.comments ol { /* This removes the numbers from the comment list */
+	list-style		:	none;	
+    margin-top		:	10px;
+}
+
+.comments li { /* This clears each comment block to a new line and adds a margin */
+	width			:	100%;
+    clear			:	both;
+    min-height		:	100px;
+}
+
+.comments .comment-wrapper { /* This sets the style for the comment wrapper */
+	display			:	block;
+}
+
+.comments .comment-author { /* This sets the style for the comment author icon */
+	float			:	left;
+    width			:	15%;
+    margin-right	:	2%;
+}
+
+.comments .content-wrapper { /* This sets the style for the comment meta and content */
+	float			:	left;
+    width			:	83%;
+}
+
+.comments .comment-content { /* This sets a small margin between the meta and comment content */
+	margin-top		:	5px;
+}
+
+span.unapproved {
+	font-style 		: 	italic;
+}
+
+img.wp-smiley{  /* This sets no border around smileys */
+	border			:	none;
+}
+
+
+/* Sidebar Styles
+-------------------------------------------------------------- */
+
+#sidebar { /* This sets the size of the sidebar as well as the font size and style */
+	float			:	right;
+	width			: 	30%;
+    background		:	transparent;
+    text-align		:	center;
+    color			:	#ababab;
+    font-size		:	12px;
+    font-family		:	Arial, Helvetica, sans-serif;
+}
+
+#sidebar a { /* This sets the color of the sidebar links */
+    color			:	#eb941a;
+}
+
+#sidebar a:hover,
+#sidebar a:active { /* This sets the color and style of the hover and active states of the sidebar links */
+    color			:	#ff6600;
+    text-decoration	:	underline;
+}
+
+#sidebar .social-media { /* This sets the padding of the social media icons in the sidebar */
+    text-align		:	left;
+    padding			:	10px 10px 5px 10px;
+}
+
+#sidebar .social-media img { /* This sets a small margin to the right of each of the social media icons */
+    border			:	0;
+    margin-right	:	5px;
+}
+
+#primary { /* This sets the position and width of the widget area */
+	float			: 	right;
+	overflow		: 	hidden;
+	width 			: 	94%;
+    padding			:	3%;
+    text-align		:	left;
+}
+
+.widget-title,.widgettitle { /* This sets the size and style of the sidebar titles */
+	font-size 		: 	14px;
+	font-weight 	: 	bold;
+    font-family		:	Arial, Helvetica, sans-serif;
+	color 			: 	#b0854a;
+	text-transform 	: 	uppercase;
+	margin-bottom 	: 	10px;
+	padding-bottom 	: 	0;
+}
+
+.widget-container { /* This sets a small margin below each widget */
+	margin			: 	0 0 1.5em 0;
+}
+
+#searchform label { /* This hides the search form label */
+	display 		: 	none;
+}
+
+/* The following style the lists in the widgets */
+
+.widget-area ul {
+	list-style		: 	none;
+	margin-left		: 	0;
+}
+
+.widget-area ul ul {
+	list-style		: 	disc;
+	margin-left		: 	1.1em;
+}
+
+.widget-area ul ul ul {
+	margin-left		: 	2.5em;
+}
+
+/* Gallery Styles
+-------------------------------------------------------------- */
+
+.gallery {
+	margin-bottom	:	15px;
+}
+
+.gallery img {
+	border			:	0px;
+}
+
+
+/* Footer Wrapper
+-------------------------------------------------------------- */
+
+.footer_wrapper { /* This sets the size and font styles of the footer area */
+	clear			: 	both;
+	width			: 	100%;
+	text-align 		: 	center;
+	padding			:	5px 0 5px 0;
+	background		:	#000000;
+	margin-top		:	-225px;
+	height			:	225px;
+	clear			:	both;
+}
+
+
+/* Footer Widget Styles
+-------------------------------------------------------------- */
+
+.footer-widget-area { /* This is the footer widget wrapper */
+	display			:	inline-block;
+	background		:	none;
+	width			:	980px;
+    min-height		:	50px;
+    color			:	#FFFFFF;
+    font-size		:	12px;
+    font-family		:	Georgia, "Times New Roman", Times, serif;
+	margin			:	0 auto;
+}
+
+.footer-widget-container { /* This is the footer widget container */
+	display			:	inline-block;
+	background		:	none;
+    height			:	auto;
+    float			:	left;
+	padding			:	10px;
+	text-align		:	left;
+	margin-bottom	:	5px;
+}
+
+.footer-widget-container .widget-title { /* This sets the style of the footer widget titles */
+    font-size		:	16px;
+    font-family		:	Georgia, "Times New Roman", Times, serif;
+	color			:	#c78425;
+}
+
+.footer-widget-container a { /* This sets the color of the footer widget links */
+    color			:	#c78425;
+}
+
+.footer-widget-container a:hover,
+.footer-widget-container a:active { /* This sets the color and style of the hover and active states of the footer widget links */
+    color			:	#c78425;
+    text-decoration	:	none;
+}
+
+
+/* Footer Style
+-------------------------------------------------------------- */
+
+#footer { /* This sets the size and font styles of the footer area */
+	clear			: 	both;
+	width			: 	960px;
+	text-align 		: 	right;
+	margin			:	15px auto 15px auto;
+	padding-top 	: 	5px;
+    border-top		:	1px solid #e8e7e7;
+	color 			: 	#FFFFFF;
+    font-size		: 	12px;
+    font-family		:	Georgia, "Times New Roman", Times, serif;
+}
+
+#footer a { /* This sets the color of the footer links */
+    color			:	#c78425;
+}
+
+#footer a:hover,
+#footer a:active { /* This sets the color and style of the hover and active states of the footer links */
+    color			:	#c78425;
+    text-decoration	:	none;
+}
+
+#footer #site-info {
+	clear			: 	both;
+	margin			:	5px 7px 0 7px;
+}
+
+
+/* Custom CSS Code
+-------------------------------------------------------------- */
+
+#footer {
+border-top:0 solid #E8E7E7;
+text-align:center;
+}

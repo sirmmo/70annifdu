@@ -1,0 +1,8 @@
+/*   
+This file sets fixes for IE browsers
+.
+*/
+
+.menu ul li ul { /* This sets the position of the dropdown menu */
+	margin-top			:	0px;
+}
